@@ -69,8 +69,8 @@ const teamMember = [
         github: 'https://github.com/',
         linkedin: 'https://www.linkedin.com/in/abzaman/',
         twitter: 'https://twitter.com/',
-        Dribble: 'https://dribbble.com/ab_designs__/',
-        Behance: 'https://www.behance.net/abzaman7/projects',
+        dribble: 'https://dribbble.com/ab_designs__/',
+        behance: 'https://www.behance.net/abzaman7/projects',
         website: ''
     }
 ];
