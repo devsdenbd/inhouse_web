@@ -1,0 +1,26 @@
+{
+  "name": "devs-den-bd",
+  "version": "1.0.0",
+  "description": "=> Our website is hosted on GitHub Pages. The whole web work will be stored here.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input-style.css -o ./public/tailwind-style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdmmalamin/devs-den-bd.git"
+  },
+  "author": "Devs Den BD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdmmalamin/devs-den-bd/issues"
+  },
+  "homepage": "https://github.com/mdmmalamin/devs-den-bd#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.2"
+  },
+  "dependencies": {
+    "daisyui": "^2.37.0"
+  },
+  "keywords": []
+}

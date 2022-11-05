@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Devs Den BD tech is a custom software development company of qa automation, software quality assurance, web designers, mobile app development, web development.">
+    <meta name="author" content="Software Development Company - Devs Den BD Technologies">
+    <title>Devs Den BD | Technology & IT Solutions</title>
+
+    <link rel="stylesheet" href="./main/style.css">
+    <link rel="stylesheet" href="./public/tailwind-style.css">
+    <link rel="shortcut icon" href="./assets/icon2.png" type="image/x-icon">
+
+    <!----- Google Font Family ------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+
+    <!------- font Awesome CDN ------->
+    <script src="https://kit.fontawesome.com/a058de0763.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="">
+    <!------- some simple info here ------->
+    <header class="bg-slate-900 text-slate-400 hidden lg:block">
+        <div class="container mx-auto flex justify-between py-2">
+            <p class="font-semibold">Welcome to Devs Den BD</p>
+            <div>
+                <!-- <span class="px-1"><i class="fa-solid fa-envelope text-purple-500"></i></span>
+                <span class="pr-8">devsdenbd2022@gmail.com</span> -->
+                <span class="px-1"><i class="fa-solid fa-clock text-purple-500"></i></span>
+                <span class="">Mon - Sat 1:00 pm - 12:00 am</span>
+            </div>
+            <div class="flex gap-24">
+                <div>
+                    <a href="https://twitter.com/DevsDenBD" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/DevsDenBD/" target="_blank"><i class="fa-brands fa-facebook px-2"></i></a>
+                    <a href="https://www.linkedin.com/company/devsdenbd/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!------- Navigation Bar ------->
+    <nav id="nav" class="bg-indigo-700/90 backdrop-blur-sm text-white sticky top-0 z-50">
+        <div class="container mx-auto py-4 shadow md:flex md:items-center md:justify-between">
+            <div class="flex justify-between items-center basis-1/3 ml-2 md:ml-0">
+                    <a href="#">
+                        <img class="h-8" src="./assets/logo1.png" alt="Devs Den BD Logo">
+                    </a>
+
+                <span class="text-3xl cursor-pointer mr-2 md:hidden block">
+                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                </span>
+            </div>
+            <!------- Nav Menu Bar ------->
+            <ul class="md:flex md:items-center basis-2/3 md:static absolute w-full left-0 md:w-auto md:py-0 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 bg-indigo-700/90 md:bg-transparent">
+                <li class="flex-none mx-4 my-6 md:my-0">
+                    <a href="#" class="font-semibold hover:text-purple-400 duration-500">HOME</a>
+                </li>
+                <li class="flex-none mx-4 my-6 md:my-0">
+                    <a href="#service" class="font-semibold hover:text-purple-400 duration-500">SERVICES</a>
+                </li>
+                <!-- <li class="flex-none mx-4 my-6 md:my-0">
+                    <a href="#project" class="font-semibold hover:text-purple-400 duration-500">PROJECT</a>
+                </li> -->
+                <!-- <li class="flex-none mx-4 my-6 md:my-0">
+                    <a href="#about" class="font-semibold hover:text-purple-400 duration-500">ABOUT</a>
+                </li> -->
+                <li class="flex-none mx-4 my-6 md:my-0">
+                    <a href="#contact" class="font-semibold hover:text-purple-400 duration-500">CONTACT US</a>
+                </li>
+                <!------- GitHub | Slack | Email ------->
+                <div class="flex-auto">
+                    <div class="flex flex-wrap md:flex-nowrap md:justify-end items-center gap-6 mx-4 my-6 md:m-0">
+                        <div class="tooltip hover:tooltip-open tooltip-bottom basis-full md:basis-0 order-last md:order-first" data-tip="Book Your Meeting">
+                            <div class="border-2 rounded-full bg-white text-indigo-700/90 backdrop-blur-sm font-bold px-3 py-1 whitespace-nowrap">
+                                <a href="https://calendly.com/devsdenbd/meeting-at-google-meet" target="_blank" >
+                                    Book A Call
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tooltip hover:tooltip-open tooltip-bottom" data-tip="Our GitHub">
+                            <a href="https://github.com/DevsDenBD" target="_blank">
+                                <i class="fa-brands fa-github text-2xl"></i>
+                            </a>
+                        </div>
+                        <div class="tooltip hover:tooltip-open tooltip-bottom" data-tip="Join Our Slack">
+                            <a href="https://join.slack.com/t/devsdenbd/shared_invite/zt-1iju8b5f5-ZRvxwnuPiBbz4MkuTbJO8A" target="_blank">
+                                <i class="fa-brands fa-slack text-2xl"></i>
+                            </a>
+                        </div>
+                        <div class="visible md:hidden">
+                            <a href="#email">
+                                <i class="fa-solid fa-envelope md:hidden text-2xl"></i>
+                            </a>
+                        </div>
+                        <!-- <ul class="pl-4">
+                            <li><small class="text-slate-300">Call Anytime</small></li>
+                            <li>+880 17777 00000</li>
+                        </ul> -->
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <!------- Header Banner Section -------> 
+    <section class="bg-no-repeat bg-cover relative -top-20 md:-top-16 min-h-[75vh]" style="background-image: url(./assets/bg-banner.png)">
+        <div class="container mx-auto text-center relative top-32">
+                <h3 class="underline underline-offset-8 font-semibold text-[2vw] lg:text-[1vw] text-slate-300">
+                    EXPERIENCE THE BEST IT SOLUTIONS
+                </h3>
+                <h1 class="font-bold text-[8vw] md:text-[6vw] lg:text-[5vw] xl:text-[4vw] text-white relative my-0 leading-tight">
+                    TECH SOLUTIONS
+                    <br />
+                    <span class="text-[10vw] md:text-[5vw] text-purple-500" style="font-family: 'Architects Daughter', cursive;">&</span>
+                    <br />
+                    SERVICES
+                </h1>
+        </div>
+    </section>
+
+    <main class="">
+        <!-------------------------
+            BANNER CARD
+        --------------------------->
+        <section class="container mx-auto pb-12 md:pb-0 relative -top-0 md:-top-28">
+            <div class="flex flex-wrap gap-8 px-8 md:flex justify-center">
+                <!------- card 1 ------->
+                <div class="group card rounded-none w-96 bg-white hover:bg-indigo-700/90 hover:backdrop-blur-sm shadow-2xl">
+                    <div class="absolute top-0 right-0 h-5 w-5 bg-purple-400/75 backdrop-blur-sm"></div>
+                    <div class="card-body relative grid grid-cols-4">
+                        <div class="col-span-3">
+                            <h1 class="card-title font-bold text-2xl group-hover:text-white">SOFTWARE DEVELOPMENT</h1>
+                            <p class="py-4 text-slate-700 group-hover:text-slate-300 font-semibold">When an unknown printer took a galley type
+                                book.</p>
+                        </div>
+                        <div class="card-actions justify-end text-6xl text-slate-500 group-hover:text-slate-400 items-end">
+                            <span>01</span>
+                        </div>
+                    </div>
+                </div>
+                <!------- card 2 ------->
+                <div class="group card rounded-none w-96 bg-white hover:bg-indigo-700/90 hover:backdrop-blur-sm0 shadow-2xl">
+                    <div class="absolute top-0 right-0 h-5 w-5 bg-purple-400/75 backdrop-blur-sm"></div>
+                    <div class="card-body relative grid grid-cols-4">
+                        <div class="col-span-3">
+                            <h1 class="card-title font-bold text-2xl group-hover:text-white">SOFTWARE TESTING</h1>
+                            <p class="py-4 text-slate-700 group-hover:text-slate-300 font-semibold">When an unknown printer took a galley type
+                                book.</p>
+                        </div>
+                        <div class="card-actions justify-end text-6xl text-slate-500 group-hover:text-slate-400 items-end">
+                            <span>02</span>
+                        </div>
+                    </div>
+                </div>
+                <!------- card 3 ------->
+                <div class="group card rounded-none w-96 bg-white hover:bg-indigo-700/90 hover:backdrop-blur-sm shadow-2xl">
+                    <div class="absolute top-0 right-0 h-5 w-5 bg-purple-400/75 backdrop-blur-sm"></div>
+                    <div class="card-body relative grid grid-cols-4">
+                        <div class="col-span-3">
+                            <h1 class="card-title font-bold text-2xl group-hover:text-white">CLOUD BASED SERVICES</h1>
+                            <p class="py-4 text-slate-700 group-hover:text-slate-300 font-semibold">When an unknown printer took a galley type
+                                book.</p>
+                        </div>
+                        <div class="card-actions justify-end text-6xl text-slate-500 group-hover:text-slate-400 items-end">
+                            <span>03</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-----------------------------------
+            SERVICES SECTION
+        ------------------------------------>
+        <section id="service" class="bg-slate-800 text-white py-12">
+            <div class="container mx-auto">
+                <h2 class="font-bold text-2xl md:text-3xl text-indigo-600 px-4 md:px-0 pb-2"><i class="fa-solid fa-minus"></i> What We're Offering to Our Clients</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 justify-center lg:gap-48 pb-12 px-4 md:px-0">
+                    <h1 class="font-bold text-3xl md:text-5xl pb-8">Dealing in all Professional IT Services</h1>
+                    <p class="text-justify pb-8">There are many variations of passages of available but majority have suffered alteration in some form, by humou or randomised words which don't look ever slightly believable.</p>
+                </div>
+
+                <!--------------------------
+                    SERVICES CARD
+                ---------------------------->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-24 pt-12 justify-between justify-items-center">
+                    <a id="service" href="#service">
+                        <div class="relative w-64">
+                            <div class="group h-[320px] bg-slate-900 hover:bg-white text-center pt-20 pb-10">
+                                <h2 class="text-xl font-bold text-white group-hover:text-black pb-2 px-6">SOFTWARE DEVELOPMENT</h2>
+                                <p class="text-slate-400 group-hover:text-slate-700 px-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, necessitatibus. amet, consectetur adipisicing elit. Consequuntur, necessitatibus</p>
+                                <div class="w-full absolute top-[-64px]">
+                                    <div class="h-32 w-32 border border-slate-900 group-hover:border-white rounded-full mx-auto bg-slate-900 group-hover:bg-white"><img class="w-24 m-3.5 p-3" src="./assets/icon/code.png" alt="software development">
+                                    </div>
+                                    <!-- <i class="fa-solid fa-bug text-6xl text-purple-500 group-hover:text-white w-32 h-32 bg-slate-900 group-hover:bg-indigo-700 p-8 rounded-full"></i> -->
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a id="service" href="#service">
+                        <div class="relative w-64">
+                            <div class="group h-[320px] bg-slate-900 hover:bg-white text-center pt-20 pb-10">
+                                <h2 class="text-xl font-bold text-white group-hover:text-black pb-2 px-6">SOFTWARE TESTING</h2>
+                                <p class="text-slate-400 group-hover:text-slate-700 px-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, necessitatibus. amet, consectetur adipisicing elit. Consequuntur, necessitatibus</p>
+                                <div class="w-full absolute top-[-64px]">
+                                    <div class="h-32 w-32 border border-slate-900 group-hover:border-white rounded-full mx-auto bg-slate-900 group-hover:bg-white"><img class="w-24 m-3.5" src="./assets/icon/debugging-outline.png" alt="software development">
+                                    </div>
+                                    <!-- <i class="fa-solid fa-bug text-6xl text-purple-500 group-hover:text-white w-32 h-32 bg-slate-900 group-hover:bg-indigo-700 p-8 rounded-full"></i> -->
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a id="service" href="#service">
+                        <div class="relative w-64">
+                            <div class="group h-[320px] bg-slate-900 hover:bg-white text-center pt-20 pb-10">
+                                <h2 class="text-xl font-bold text-white group-hover:text-black pb-2 px-6">CLOUD BASED SERVICES</h2>
+                                <p class="text-slate-400 group-hover:text-slate-700 px-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, necessitatibus. amet, consectetur adipisicing elit. Consequuntur, necessitatibus</p>
+                                <div class="w-full absolute top-[-64px]">
+                                    <div class="h-32 w-32 border border-slate-900 group-hover:border-white rounded-full mx-auto bg-slate-900 group-hover:bg-white"><img class="w-24 m-3.5 p-2" src="./assets/icon/service-provider.png" alt="software development">
+                                    </div>
+                                    <!-- <i class="fa-solid fa-bug text-6xl text-purple-500 group-hover:text-white w-32 h-32 bg-slate-900 group-hover:bg-indigo-700 p-8 rounded-full"></i> -->
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a id="service" href="#service">
+                        <div class="relative w-64">
+                            <div class="group h-[320px] bg-slate-900 hover:bg-white text-center pt-20 pb-10">
+                                <h2 class="text-xl font-bold text-white group-hover:text-black pb-2 px-6">Security System</h2>
+                                <p class="text-slate-400 group-hover:text-slate-700 px-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, necessitatibus. amet, consectetur adipisicing elit. Consequuntur, necessitatibus</p>
+                                <div class="w-full absolute top-[-64px]">
+                                    <div class="h-32 w-32 border border-slate-900 group-hover:border-white rounded-full mx-auto bg-slate-900 group-hover:bg-white"><img class="w-24 m-3.5" src="./assets/icon/saas.png" alt="software development">
+                                    </div>
+                                    <!-- <i class="fa-solid fa-bug text-6xl text-purple-500 group-hover:text-white w-32 h-32 bg-slate-900 group-hover:bg-indigo-700 p-8 rounded-full"></i> -->
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!----------------------------------
+            OUR TEAM
+        ------------------------------------>
+        <section id="our-team" class="container mx-auto py-12">
+            <h2 class="font-bold text-2xl md:text-3xl text-indigo-600 px-4 md:px-0 py-2"><i class="fa-solid fa-minus"></i> Our Expert People</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 justify-center lg:gap-48 pb-12 px-4 md:px-0">
+                <h1 class="font-bold text-3xl md:text-5xl pb-8">Meet Our Professional Team Members</h1>
+                <p class="text-justify pb-8">There are many variations of passages of available but majority have suffered alteration in some form, by humou or randomised words which don't look ever slightly believable.</p>
+            </div>
+            <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-between justify-items-center">
+                <!------- Md Shahnewaz Zaman ------->
+                <section class="w-72 p-4 border-1 bg-gradient-to-r from-zinc-100 to-indigo-100  hover:from-indigo-100 hover:to-purple-100 relative">
+                    <div class="w-48 mx-auto rounded-full bg-gradient-to-r from-indigo-600 to-purple-500">
+                        <img class="w-48 p-1 rounded-full" src="./assets/team/shahnewaz.jpg" alt="Md Shahnewaz Zaman">
+                    </div>
+                    <div class="my-4">
+                        <div class="text-center">
+                            <h2 class="font-semibold">Md Shahnewaz Zaman</h2>
+                            <p class="text-slate-500">Tech Lead</p>
+                        </div>
+                        <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
+                        <div class="text-center my-4">
+                            <a href="https://github.com/msz5213" target="_blank">
+                                <i class="fa-brands fa-github text-2xl h-8 rounded-full mx-3" style="color:#202124;"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/zamanmd/" target="_blank">
+                                <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3" style="color:#0A66C2;"></i>
+                            </a>
+                            <!-- <a href="https://twitter.com/" target="_blank">
+                                <i class="fa-brands fa-twitter text-2xl h-8 rounded-full mx-3" style="color:#1D9BF0;"></i>
+                            </a> -->
+                            <a href="https://msz5213.github.io/mdzamanportfolio/" target="_blank">
+                                <i class="fa-solid fa-globe text-2xl h-8 rounded-full mx-3" style="color:#000000;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-------  Md. Mahbubur Rahman (TOM) ------->
+                <section class="w-72 p-4 border-1 bg-gradient-to-r from-zinc-100 to-indigo-100  hover:from-indigo-100 hover:to-purple-100 relative">
+                    <div class="w-48 mx-auto rounded-full bg-gradient-to-r from-indigo-600 to-purple-500">
+                        <img class="w-48 p-1 rounded-full" src="./assets/team/mahbubur.jpg" alt="Md. Mahbubur Rahman">
+                    </div>
+                    <div class="my-4">
+                        <div class="text-center">
+                            <h2 class="font-semibold">Md. Mahbubur Rahman (TOM)</h2>
+                            <p class="text-slate-500">SQA Engineer</p>
+                            <p class="font-semibold"><small>Specialized in Automation</small></p>
+                        </div>
+                        <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
+                        <div class="text-center my-4">
+                            <a href="https://github.com/Mahbub091" target="_blank">
+                                <i class="fa-brands fa-github text-2xl h-8 rounded-full mx-3" style="color:#202124;"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/mahbubrahman091/" target="_blank">
+                                <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3" style="color:#0A66C2;"></i>
+                            </a>
+                            <a href="https://twitter.com/tom_sqa" target="_blank">
+                                <i class="fa-brands fa-twitter text-2xl h-8 rounded-full mx-3" style="color:#1D9BF0;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!------- Talha Bin Ashraf ------->
+                <section class="w-72 p-4 border-1 bg-gradient-to-r from-zinc-100 to-indigo-100  hover:from-indigo-100 hover:to-purple-100 relative">
+                    <div class="w-48 mx-auto rounded-full bg-gradient-to-r from-indigo-600 to-purple-500">
+                        <img class="w-48 p-1 rounded-full" src="./assets/team/talha.jpg" alt="Developer Amin">
+                    </div>
+                    <div class="my-4">
+                        <div class="text-center">
+                            <h2 class="font-semibold">Talha Bin Ashraf</h2>
+                            <p class="text-slate-500">SQA Engineer</p>
+                            <p class="font-semibold"><small>Specialized in Automation</small></p>
+                        </div>
+                        <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
+                        <div class="text-center my-4">
+                            <a href="https://github.com/TalhaBinAshraf1" target="_blank">
+                                <i class="fa-brands fa-github text-2xl h-8 w-4 rounded-full mx-3" style="color:#202124;"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/talha-sqa-engineer/" target="_blank">
+                                <i class="fa-brands fa-linkedin text-2xl h-8 w-4 rounded-full mx-3" style="color:#0A66C2;"></i>
+                            </a>
+                            <a href="https://twitter.com/talhabinashraf" target="_blank">
+                                <i class="fa-brands fa-twitter text-2xl h-8 w-4 rounded-full mx-3" style="color:#1D9BF0;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!------- Asif Iqbal ------->
+                <section class="w-72 p-4 border-1 bg-gradient-to-r from-zinc-100 to-indigo-100  hover:from-indigo-100 hover:to-purple-100 relative">
+                    <div class="w-48 mx-auto rounded-full bg-gradient-to-r from-indigo-600 to-purple-500">
+                        <img class="w-48 p-1 rounded-full" src="./assets/team/iqbal.jpg" alt="Iqbal">
+                    </div>
+                    <div class="my-4">
+                        <div class="text-center">
+                            <h2 class="font-semibold">Asif Iqbal</h2>
+                            <p class="text-slate-500">SQA Engineer</p>
+                            <p class="font-semibold"><small>ISTQB Certified</small></p>
+                        </div>
+                        <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
+                        <div class="text-center my-4">
+                            <a href="https://github.com/asif-iqbal-sqa" target="_blank">
+                                <i class="fa-brands fa-github text-2xl h-8 w-4 rounded-full mx-3" style="color:#202124;"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/asifiqbal-sqa/" target="_blank">
+                                <i class="fa-brands fa-linkedin text-2xl h-8 w-4 rounded-full mx-3" style="color:#0A66C2;"></i>
+                            </a>
+                            <a href="https://twitter.com/asifiqbalsqa" target="_blank">
+                                <i class="fa-brands fa-twitter text-2xl h-8 w-4 rounded-full mx-3" style="color:#1D9BF0;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!------- Muhibullah ------->
+                <section class="w-72 p-4 border-1 bg-gradient-to-r from-zinc-100 to-indigo-100  hover:from-indigo-100 hover:to-purple-100 relative">
+                    <div class="w-48 h-48 mx-auto rounded-full bg-gradient-to-r from-indigo-600 to-purple-500">
+                        <img class="w-48 p-1 rounded-full" src="./assets/team/muhib.jpg" alt="Muhibullah">
+                    </div>
+                    <div class="my-4">
+                        <div class="text-center">
+                            <h2 class="font-semibold">Muhibullah</h2>
+                            <p class="text-slate-500">Senior Software Developer</p>
+                            <p class="font-semibold"><small>Front-End</small></p>
+                        </div>
+                        <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
+                        <div class="text-center my-4">
+                            <a href="https://github.com/muhib-dev" target="_blank">
+                                <i class="fa-brands fa-github text-2xl h-8 rounded-full mx-3" style="color:#202124;"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/muhibullah-khandaker/" target="_blank">
+                                <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3" style="color:#0A66C2;"></i>
+                            </a>
+                            <a href="https://docs.google.com/document/d/1MWCXVYZEl6aXu4zZst2fEW9qLHkViZyPUMhvJt99Xf0/edit" target="_blank">
+                                <i class="fa-solid fa-globe text-2xl h-8 rounded-full mx-3" style="color:#000000;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!------- Shahed Al Mahmud ------->
+                <section class="w-72 p-4 border-1 bg-gradient-to-r from-zinc-100 to-indigo-100  hover:from-indigo-100 hover:to-purple-100 relative">
+                    <div class="w-48 mx-auto rounded-full bg-gradient-to-r from-indigo-600 to-purple-500">
+                        <img class="w-48 h-48 p-1 rounded-full" src="./assets/team/shahed.jpg" alt="Shahed Al Mahmud">
+                    </div>
+                    <div class="my-4">
+                        <div class="text-center">
+                            <h2 class="font-semibold">Shahed Al Mahmud</h2>
+                            <p class="text-slate-500">Senior Software Developer</p>
+                            <p class="font-semibold"><small>Back-End</small></p>
+                        </div>
+                        <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
+                        <div class="text-center my-4">
+                            <a href="http://www.github.com/shahed-webdev" target="_blank">
+                                <i class="fa-brands fa-github text-2xl h-8 rounded-full mx-3" style="color:#202124;"></i>
+                            </a>
+                            <a href="http://linkedin.com/in/shahed-al-mahmud" target="_blank">
+                                <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3" style="color:#0A66C2;"></i>
+                            </a>
+                            <a href="https://docs.google.com/document/d/1MWCXVYZEl6aXu4zZst2fEW9qLHkViZyPUMhvJt99Xf0/edit" target="_blank">
+                                <i class="fa-solid fa-globe text-2xl h-8 rounded-full mx-3" style="color:#000000;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!------- Md Moinur Mahbub ------->
+                <section class="w-72 p-4 border-1 bg-gradient-to-r from-zinc-100 to-indigo-100  hover:from-indigo-100 hover:to-purple-100 relative">
+                    <div class="w-48 mx-auto rounded-full bg-gradient-to-r from-indigo-600 to-purple-500">
+                        <img class="w-48 p-1 rounded-full" src="./assets/team/amin.jpg" alt="Md Moinur Mahbub">
+                    </div>
+                    <div class="my-4">
+                        <div class="text-center">
+                            <h2 class="font-semibold">Md Moinur Mahbub</h2>
+                            <p class="text-slate-500">Web Developer</p>
+                            <p class="font-semibold"><small>MERN Stack</small></p>
+                        </div>
+                        <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
+                        <div class="text-center my-4">
+                            <a href="https://github.com/mdmmalamin" target="_blank">
+                                <i class="fa-brands fa-github text-2xl h-8 rounded-full mx-3" style="color:#202124;"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/mdmmalamin/" target="_blank">
+                                <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3" style="color:#0A66C2;"></i>
+                            </a>
+                            <a href="https://twitter.com/mdmmalamin" target="_blank">
+                                <i class="fa-brands fa-twitter text-2xl h-8 rounded-full mx-3" style="color:#1D9BF0;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!------- A.B. Zaman ------->
+                <section class="w-72 p-4 border-1 bg-gradient-to-r from-zinc-100 to-indigo-100  hover:from-indigo-100 hover:to-purple-100 relative">
+                    <div class="w-48 mx-auto rounded-full bg-gradient-to-r from-indigo-600 to-purple-500">
+                        <img class="w-48 p-1 rounded-full" src="./assets/team/zaman.jpg" alt="A.B. Zaman">
+                    </div>
+                    <div class="my-4">
+                        <div class="text-center">
+                            <h2 class="font-semibold">A.B. Zaman</h2>
+                            <p class="text-slate-500">Identity Designer</p>
+                            <!-- <p class="font-semibold"><small>Identity Designer</small></p> -->
+                        </div>
+                        <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
+                        <div class="text-center my-4">
+                            <a href="https://github.com/" target="_blank">
+                                <i class="fa-brands fa-github text-2xl h-8 rounded-full mx-3" style="color:#202124;"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/abzaman/" target="_blank">
+                                <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3" style="color:#0A66C2;"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank">
+                                <i class="fa-brands fa-twitter text-2xl h-8 rounded-full mx-3" style="color:#1D9BF0;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <!------- DEVS.DEN.BD FOOTER ------->
+    <footer id="footer" class="bg-slate-900 text-slate-400 py-12">
+        <section class="container mx-auto flex flex-col lg:flex-row gap-12 lg:gap-32 px-2 md:px-0">
+            <section>
+                <div>
+                    <a href="#">
+                        <img class="pb-4" src="assets/logo2.png" alt="Devs Den BD Logo">
+                    </a>
+                    <div class="border-b-2 border-purple-500 w-12 mb-4"></div>
+                </div>
+                <p>We work with a passion of taking challenges and creating new ones in advertising sector.</p>
+                <div class="pt-4 whitespace-nowrap">
+                    <a href="https://www.facebook.com/DevsDenBD/" target="_blank"><i class="fa-brands fa-facebook h-8 w-8 bg-slate-700 text-slate-300 rounded-full p-2 mr-3"></i></a>
+                    <a href="https://www.linkedin.com/company/devsdenbd/" target="_blank"><i class="fa-brands fa-linkedin h-8 w-8 bg-slate-700 text-slate-300 rounded-full p-2 mr-3"></i></a>
+                    <a href="https://twitter.com/DevsDenBD" target="_blank"><i class="fa-brands fa-twitter h-8 w-8 bg-slate-700 text-slate-300 rounded-full p-2 mr-3"></i></a>
+                    <a href="https://github.com/DevsDenBD" target="_blank"><i class="fa-brands fa-github h-8 w-8 bg-slate-700 text-slate-300 rounded-full p-2 mr-3"></i></a>
+                    <a href="https://join.slack.com/t/devsdenbd/shared_invite/zt-1iju8b5f5-ZRvxwnuPiBbz4MkuTbJO8A" target="_blank"><i class="fa-brands fa-slack h-8 w-8 bg-slate-700 text-slate-300 rounded-full p-2 mr-3"></i></a>
+                </div>
+            </section>
+            <section class="flex flex-col md:flex-row gap-12 lg:gap-32">
+                <section>
+                    <h2 class="text-2xl font-semibold pb-4 text-white">Links</h2>
+                    <div class="border-b-2 border-purple-500 w-12 mb-4"></div>
+                    <ul class="whitespace-nowrap">
+                        <li class=""><a href="#contact">About us</a></li>
+                        <li class=""><a href="#our-team">Meet our team</a></li>
+                        <!-- <li class=""><a href="">Our Projects</a></li> -->
+                        <li class=""><a href="#service">Our Services</a></li>
+                        <li class=""><a href="#contact">Contacts</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2 class="text-2xl font-semibold pb-4 text-white">Queries</h2>
+                    <div class="border-b-2 border-purple-500 w-12 mb-4"></div>
+                    <p class="text-justify">We would love to here about your ideas and discuss how we can help you to reach your ultimate goal. Please send us email to get in touch and possible discussion schedule.</p>
+                    <form action="mailto: devsdenbd2022@gmail.com" method="POST" enctype="application/x-www-form-urlencoded">
+                        <input type="email" name="email" id="email" placeholder="Email Address"
+                            class="mt-4 px-3 py-2.5 w-4/6">
+                        <button type="submit"><i class="fa-solid fa-paper-plane bg-slate-700 border-none p-3.5"></i></button>
+                    </form>
+                </section>
+                <section>
+                    <h2 id="contact" class="text-2xl font-semibold pb-4 text-white">Contact</h2>
+                    <div class="border-b-2 border-purple-500 w-12 mb-4"></div>
+                    <p class="whitespace-nowrap"><i class="fa-sharp fa-solid fa-phone-volume text-slate-300 mr-2"></i> +880 17777 00000</p>
+                    <p class="whitespace-nowrap"><i class="fa-solid fa-envelope text-slate-300 mr-2"></i> devsdenbd2022@gmail.com</p>
+                    <p><i class="fa-solid fa-location-dot text-slate-300 mr-2"></i>Mirpur-1, Dhaka</p>
+                </section>
+            </section>
+        </section>
+        <p class="text-center pt-12 px-4">Copyright © Devs Den BD 2022 All Right Reserved</p>
+    </footer>
+
+
+    <!------- Ionicons ------->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!------- JAVA SCRIPT ------->
+    <script>
+        function Menu(e){
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close",list.classList.add('top-[68px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[68px]'),list.classList.remove('opacity-100'))
+        }
+    </script>
+</body>
+
+</html>
