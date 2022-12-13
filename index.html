@@ -24,26 +24,6 @@
 </head>
 
 <body class="">
-    <!------- some simple info here ------->
-    <header class="bg-slate-900 text-slate-400 hidden lg:block">
-        <div class="container mx-auto flex justify-between py-2">
-            <p class="font-semibold">Welcome to Devs Den BD</p>
-            <div>
-                <!-- <span class="px-1"><i class="fa-solid fa-envelope text-purple-500"></i></span>
-                <span class="pr-8">devsdenbd2022@gmail.com</span> -->
-                <span class="px-1"><i class="fa-solid fa-clock text-purple-500"></i></span>
-                <span class="">Mon - Sat 1:00 pm - 12:00 am</span>
-            </div>
-            <div class="flex gap-24">
-                <div>
-                    <a href="https://twitter.com/DevsDenBD" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.facebook.com/DevsDenBD/" target="_blank"><i class="fa-brands fa-facebook px-2"></i></a>
-                    <a href="https://www.linkedin.com/company/devsdenbd/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-        </div>
-    </header>
-
     <!------- Navigation Bar ------->
     <nav id="nav" class="bg-black/80 backdrop-blur-sm text-white sticky top-0 z-50">
         <div class="container mx-auto py-4 shadow md:flex md:items-center md:justify-between">
@@ -57,31 +37,30 @@
                 </span>
             </div>
             <!------- Nav Menu Bar ------->
-            <ul class="md:flex md:items-center basis-2/3 md:static absolute w-full left-0 md:w-auto md:py-0 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 bg-black md:bg-transparent">
+            <ul class="md:flex md:items-center basis-2/3 md:static absolute w-full left-0 md:w-auto md:py-0 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 bg-black/80 md:bg-transparent">
                 <li class="flex-none mx-4 my-6 md:my-0">
-                    <a href="#" class="font-semibold hover:text-purple-400 duration-500">HOME</a>
+                    <a href="#" class="font-semibold hover:text-indigo-600 duration-500">HOME</a>
                 </li>
                 <li class="flex-none mx-4 my-6 md:my-0">
-                    <a href="#service" class="font-semibold hover:text-purple-400 duration-500">SERVICES</a>
+                    <a href="#service" class="font-semibold hover:text-indigo-600 duration-500">SERVICES</a>
                 </li>
-                <!-- <li class="flex-none mx-4 my-6 md:my-0">
-                    <a href="#project" class="font-semibold hover:text-purple-400 duration-500">PROJECT</a>
-                </li> -->
-                <!-- <li class="flex-none mx-4 my-6 md:my-0">
-                    <a href="#about" class="font-semibold hover:text-purple-400 duration-500">ABOUT</a>
-                </li> -->
                 <li class="flex-none mx-4 my-6 md:my-0">
-                    <a href="#contact" class="font-semibold hover:text-purple-400 duration-500">CONTACT US</a>
+                    <a href="#contact" class="font-semibold hover:text-indigo-600 duration-500">CONTACT US</a>
                 </li>
                 <!------- GitHub | Slack | Email ------->
                 <div class="flex-auto">
                     <div class="flex flex-wrap md:flex-nowrap md:justify-end items-center gap-6 mx-4 my-6 md:m-0">
                         <div class="tooltip hover:tooltip-open tooltip-bottom basis-full md:basis-0 order-last md:order-first" data-tip="Book Your Meeting">
-                            <div class="border-2 rounded-full bg-white text-indigo-700/90 backdrop-blur-sm font-bold px-3 py-1 whitespace-nowrap">
-                                <a href="https://calendly.com/devsdenbd/meeting-at-google-meet" target="_blank" >
+                            <div class="border-2 rounded-full bg-white text-black/80 backdrop-blur-sm font-bold px-3 py-0.5 whitespace-nowrap">
+                                <a href="https://calendly.com/devsden/meeting-at-google-meet?month=2022-12" target="_blank" >
                                     Book A Call
                                 </a>
                             </div>
+                        </div>
+                        <div class="tooltip hover:tooltip-open tooltip-bottom" data-tip="Our GitHub">
+                            <a href="https://github.com/DevsDenBD" target="_blank">
+                                <i class="fa-brands fa-linkedin-in text-2xl"></i>
+                            </a>
                         </div>
                         <div class="tooltip hover:tooltip-open tooltip-bottom" data-tip="Our GitHub">
                             <a href="https://github.com/DevsDenBD" target="_blank">
@@ -98,29 +77,26 @@
                                 <i class="fa-solid fa-envelope md:hidden text-2xl"></i>
                             </a>
                         </div>
-                        <!-- <ul class="pl-4">
-                            <li><small class="text-slate-300">Call Anytime</small></li>
-                            <li>+880 17777 00000</li>
-                        </ul> -->
                     </div>
                 </div>
             </ul>
         </div>
     </nav>
     <!------- Header Banner Section -------> 
-    <section class="bg-no-repeat bg-cover relative -top-20 md:-top-16 min-h-[75vh]" style="background-image: url(./assets/bg-banner.png)">
-        <div class="container mx-auto text-center relative top-32">
-                <h3 class="underline underline-offset-8 font-semibold text-[2vw] lg:text-[1vw] text-slate-300">
-                    EXPERIENCE THE BEST IT SOLUTIONS
-                </h3>
-                <h1 class="font-bold text-[8vw] md:text-[6vw] lg:text-[5vw] xl:text-[4vw] text-white relative my-0 leading-tight">
-                    TECH SOLUTIONS
-                    <br />
-                    <span class="text-[10vw] md:text-[5vw] text-purple-500" style="font-family: 'Architects Daughter', cursive;">&</span>
-                    <br />
-                    SERVICES
-                </h1>
-        </div>
+    <section class="bg-no-repeat bg-cover bg-center relative -top-20 md:-top-16 min-h-[60vh]" style="background-image: url(./assets/banner.jpg)">
+        <!-- <img src="./assets/banner.jpg" alt=""> -->
+        <!-- <div class="container mx-auto text-center relative top-32">
+            <h3 class="underline underline-offset-8 font-semibold text-[2vw] lg:text-[1vw] text-slate-300">
+                EXPERIENCE THE BEST IT SOLUTIONS
+            </h3>
+            <h1 class="font-bold text-[8vw] md:text-[6vw] lg:text-[5vw] xl:text-[4vw] text-white relative my-0 leading-tight">
+                TECH SOLUTIONS
+                <br />
+                <span class="text-[10vw] md:text-[5vw] text-purple-500" style="font-family: 'Architects Daughter', cursive;">&</span>
+                <br />
+                SERVICES
+            </h1>
+        </div> -->
     </section>
 
     <main class="">
@@ -130,34 +106,30 @@
         <section class="container mx-auto pb-12 md:pb-0 relative -top-0 md:-top-28">
             <div class="flex flex-wrap gap-8 px-8 md:flex justify-center">
                 <!------- card 1 ------->
-                <div class="group card rounded-none w-96 bg-white hover:bg-indigo-700/90 hover:backdrop-blur-sm shadow-2xl">
+                <div class="group card rounded-none w-96 bg-black/90 hover:bg-white hover:backdrop-blur-sm shadow-2xl">
                     <div class="absolute top-0 right-0 h-5 w-5 bg-purple-400/75 backdrop-blur-sm"></div>
-                    <div class="card-body relative grid grid-cols-4">
-                        <div class="col-span-3">
-                            <h1 class="card-title font-bold text-2xl group-hover:text-white">SOFTWARE DEVELOPMENT</h1>
-                            <p class="py-4 text-slate-700 group-hover:text-slate-300 font-semibold">When an unknown printer took a galley type
-                                book.</p>
-                        </div>
-                        <div class="card-actions justify-end text-6xl text-slate-500 group-hover:text-slate-400 items-end">
-                            <span>01</span>
-                        </div>
+                    <div class="card-body relative">
+                        <h1 class="card-title font-bold text-2xl text-white group-hover:text-black">SOFTWARE DEVELOPMENT</h1>
+                        <p class="py-4 text-slate-300 group-hover:text-slate-700 font-semibold">When an unknown printer took a galley type book.</p>
                     </div>
                 </div>
                 <!------- card 2 ------->
-                <div class="group card rounded-none w-96 bg-white hover:bg-indigo-700/90 hover:backdrop-blur-sm0 shadow-2xl">
+                <div class="group card rounded-none w-96 bg-white hover:bg-black/90 hover:backdrop-blur-sm shadow-2xl">
                     <div class="absolute top-0 right-0 h-5 w-5 bg-purple-400/75 backdrop-blur-sm"></div>
-                    <div class="card-body relative grid grid-cols-4">
-                        <div class="col-span-3">
-                            <h1 class="card-title font-bold text-2xl group-hover:text-white">SOFTWARE TESTING</h1>
-                            <p class="py-4 text-slate-700 group-hover:text-slate-300 font-semibold">When an unknown printer took a galley type
-                                book.</p>
-                        </div>
-                        <div class="card-actions justify-end text-6xl text-slate-500 group-hover:text-slate-400 items-end">
-                            <span>02</span>
-                        </div>
+                    <div class="card-body relative">
+                        <h1 class="card-title font-bold text-2xl group-hover:text-white">SOFTWARE TESTING</h1>
+                        <p class="py-4 text-slate-700 group-hover:text-slate-300 font-semibold">When an unknown printer took a galley type book.</p>
                     </div>
                 </div>
                 <!------- card 3 ------->
+                <div class="group card rounded-none w-96 bg-black/90 hover:bg-white hover:backdrop-blur-sm shadow-2xl">
+                    <div class="absolute top-0 right-0 h-5 w-5 bg-purple-400/75 backdrop-blur-sm"></div>
+                    <div class="card-body relative">
+                        <h1 class="card-title font-bold text-2xl text-white group-hover:text-black">CLOUD BASED SERVICES</h1>
+                        <p class="py-4 text-slate-300 group-hover:text-slate-700 font-semibold">When an unknown printer took a galley type book.</p>
+                    </div>
+                </div>
+                <!-- ----- card 3 -----
                 <div class="group card rounded-none w-96 bg-white hover:bg-indigo-700/90 hover:backdrop-blur-sm shadow-2xl">
                     <div class="absolute top-0 right-0 h-5 w-5 bg-purple-400/75 backdrop-blur-sm"></div>
                     <div class="card-body relative grid grid-cols-4">
@@ -170,7 +142,7 @@
                             <span>03</span>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 
@@ -473,11 +445,16 @@
                 </div>
                 <p>We work with a passion of taking challenges and creating new ones in advertising sector.</p>
                 <div class="pt-4 whitespace-nowrap">
-                    <a href="https://www.facebook.com/DevsDenBD/" target="_blank"><i class="fa-brands fa-facebook h-8 w-8 bg-slate-700 text-slate-300 rounded-full p-2 mr-3"></i></a>
-                    <a href="https://www.linkedin.com/company/devsdenbd/" target="_blank"><i class="fa-brands fa-linkedin h-8 w-8 bg-slate-700 text-slate-300 rounded-full p-2 mr-3"></i></a>
-                    <a href="https://twitter.com/DevsDenBD" target="_blank"><i class="fa-brands fa-twitter h-8 w-8 bg-slate-700 text-slate-300 rounded-full p-2 mr-3"></i></a>
-                    <a href="https://github.com/DevsDenBD" target="_blank"><i class="fa-brands fa-github h-8 w-8 bg-slate-700 text-slate-300 rounded-full p-2 mr-3"></i></a>
-                    <a href="https://join.slack.com/t/devsdenbd/shared_invite/zt-1iju8b5f5-ZRvxwnuPiBbz4MkuTbJO8A" target="_blank"><i class="fa-brands fa-slack h-8 w-8 bg-slate-700 text-slate-300 rounded-full p-2 mr-3"></i></a>
+                    <!-- <a href="https://www.facebook.com/DevsDenBD/" target="_blank"><i class="fa-brands fa-facebook text-2xl bg-slate-700 text-[#0D88EF] rounded-full p-2 mr-3"></i></a>
+                    <a href="https://www.linkedin.com/company/devsdenbd/" target="_blank"><i class="fa-brands fa-linkedin text-2xl bg-slate-700 text-[#0A66C2] rounded-full p-2 mr-3"></i></a>
+                    <a href="https://twitter.com/DevsDenBD" target="_blank"><i class="fa-brands fa-twitter text-2xl bg-slate-700 text-[#1D9BF0] rounded-full p-2 mr-3"></i></a>
+                    <a href="https://github.com/DevsDenBD" target="_blank"><i class="fa-brands fa-github text-2xl bg-slate-700 text-[#B9BBBD] rounded-full p-2 mr-3"></i></a>
+                    <a href="https://join.slack.com/t/devsdenbd/shared_invite/zt-1iju8b5f5-ZRvxwnuPiBbz4MkuTbJO8A" target="_blank"><i class="fa-brands fa-slack text-2xl bg-slate-700 text-slate-300 rounded-full p-2 mr-3"></i></a> -->
+                    <a href="https://www.facebook.com/DevsDenBD/" target="_blank"><img class="w-12 inline bg-slate-200 rounded-lg p-1.5 mr-3" src="./assets/icon/logo/facebook.ico" alt=""></a>
+                    <a href="https://www.linkedin.com/company/devsdenbd/" target="_blank"><img class="w-12 inline bg-slate-200 rounded-lg p-1.5 mr-3" src="./assets/icon/logo/linkedin.ico" alt=""></a>
+                    <a href="https://twitter.com/DevsDenBD" target="_blank"><img class="w-12 inline bg-slate-200 rounded-lg p-1.5 mr-3" src="./assets/icon/logo/twitter.ico" alt=""></a>
+                    <a href="https://github.com/DevsDenBD" target="_blank"><img class="w-12 inline bg-slate-200 rounded-lg p-1.5 mr-3" src="./assets/icon/logo/github.ico" alt=""></a>
+                    <a href="https://join.slack.com/t/devsdenbd/shared_invite/zt-1iju8b5f5-ZRvxwnuPiBbz4MkuTbJO8A" target="_blank"><img class="w-12 inline bg-slate-200 rounded-lg p-1.5 mr-3" src="./assets/icon/logo/slack.ico" alt=""></a>
                 </div>
             </section>
             <section class="flex flex-col md:flex-row gap-12 lg:gap-32">
