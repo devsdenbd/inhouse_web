@@ -3109,9 +3109,14 @@ html {
   --tw-gradient-to: #f3e8ff;
 }
 
-.hover\:text-purple-400:hover {
+.hover\:text-indigo-500:hover {
   --tw-text-opacity: 1;
-  color: rgb(192 132 252 / var(--tw-text-opacity));
+  color: rgb(99 102 241 / var(--tw-text-opacity));
+}
+
+.hover\:text-indigo-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(79 70 229 / var(--tw-text-opacity));
 }
 
 .hover\:backdrop-blur-sm:hover {
