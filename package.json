@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mdmmalamin/devs-den-bd.git"
+    "url": "git+https://github.com/DevsDenBD/inhouse_web.git"
   },
   "author": "Devs Den BD",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mdmmalamin/devs-den-bd/issues"
+    "url": "https://github.com/DevsDenBD/inhouse_web/issues"
   },
-  "homepage": "https://github.com/mdmmalamin/devs-den-bd#readme",
+  "homepage": "https://github.com/DevsDenBD/inhouse_web#readme",
   "devDependencies": {
     "tailwindcss": "^3.2.2"
   },
