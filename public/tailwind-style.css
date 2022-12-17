@@ -3086,11 +3086,6 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
-.hover\:bg-white:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-black\/90:hover {
   background-color: rgb(0 0 0 / 0.9);
 }
@@ -3099,19 +3094,29 @@ html {
   background-color: rgb(67 56 202 / 0.9);
 }
 
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:from-indigo-200:hover {
+  --tw-gradient-from: #c7d2fe;
+  --tw-gradient-to: rgb(199 210 254 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .hover\:from-indigo-100:hover {
   --tw-gradient-from: #e0e7ff;
   --tw-gradient-to: rgb(224 231 255 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.hover\:to-purple-100:hover {
-  --tw-gradient-to: #f3e8ff;
+.hover\:to-purple-200:hover {
+  --tw-gradient-to: #e9d5ff;
 }
 
-.hover\:text-indigo-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(99 102 241 / var(--tw-text-opacity));
+.hover\:to-purple-100:hover {
+  --tw-gradient-to: #f3e8ff;
 }
 
 .hover\:text-indigo-600:hover {
