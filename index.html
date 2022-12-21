@@ -37,49 +37,51 @@
                 </span>
             </div>
             <!------- Nav Menu Bar ------->
-            <ul class="md:flex md:items-center justify-center basis-1/3 md:static absolute w-full left-0 md:w-auto md:py-0 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 bg-black/80 md:bg-transparent">
-                <li class="flex-none mx-4 my-6 md:my-0">
-                    <a href="#" class="font-semibold hover:text-indigo-600 duration-500">HOME</a>
-                </li>
-                <li class="flex-none mx-4 my-6 md:my-0">
-                    <a href="#service" class="font-semibold hover:text-indigo-600 duration-500">SERVICES</a>
-                </li>
-                <li class="flex-none mx-4 my-6 md:my-0">
-                    <a href="#contact" class="font-semibold hover:text-indigo-600 duration-500">CONTACT US</a>
-                </li>
+            <ul class="md:flex md:items-center basis-2/3 md:static absolute w-full left-0 md:w-auto md:py-0 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 bg-slate-900/95 md:bg-transparent">
+                <ul class="md:flex md:items-center justify-center basis-1/2">
+                    <li class="flex-none mx-4 my-6 md:my-0">
+                        <a href="#" class="font-semibold hover:text-indigo-600 duration-500">Home</a>
+                    </li>
+                    <li class="flex-none mx-4 my-6 md:my-0">
+                        <a href="#service" class="font-semibold hover:text-indigo-600 duration-500">Services</a>
+                    </li>
+                    <li class="flex-none mx-4 my-6 md:my-0">
+                        <a href="#contact" class="font-semibold hover:text-indigo-600 duration-500">Contact Us</a>
+                    </li>
+                </ul>
                 <!------- GitHub | Slack | Email ------->
-            </ul>
-            <div class="flex-auto">
-                <div class="flex flex-wrap md:flex-nowrap md:justify-end items-center gap-6 mx-4 my-6 md:m-0">
-                    <div class="tooltip hover:tooltip-open tooltip-bottom basis-1/3 md:basis-0 order-last md:order-first" data-tip="Book Your Meeting">
-                        <div class="border-2 rounded-full bg-white text-black/80 backdrop-blur-sm font-bold px-3 py-0.5 whitespace-nowrap">
-                            <a href="https://calendly.com/devsden/meeting-at-google-meet?month=2022-12" target="_blank" >
-                                Book A Call
+                <li class="basis-1/2">
+                    <ul class="flex flex-wrap md:flex-nowrap md:justify-end items-center gap-6 mx-4 my-6 md:m-0">
+                        <li class="tooltip hover:tooltip-open tooltip-bottom basis-full md:basis-0 order-last md:order-first" data-tip="Book Your Meeting">
+                            <div class="border-2 rounded-full bg-white text-black/80 backdrop-blur-sm font-bold px-3 py-0.5 whitespace-nowrap">
+                                <a href="https://calendly.com/devsden/meeting-at-google-meet?month=2022-12" target="_blank" >
+                                    Book A Call
+                                </a>
+                            </div>
+                        </li>
+                        <li class="tooltip hover:tooltip-open tooltip-bottom" data-tip="Our Linkedin">
+                            <a href="https://www.linkedin.com/company/devsdenbd/" target="_blank">
+                                <i class="fa-brands fa-linkedin-in text-2xl"></i>
                             </a>
-                        </div>
-                    </div>
-                    <div class="tooltip hover:tooltip-open tooltip-bottom" data-tip="Our Linkedin">
-                        <a href="https://www.linkedin.com/company/devsdenbd/" target="_blank">
-                            <i class="fa-brands fa-linkedin-in text-2xl"></i>
-                        </a>
-                    </div>
-                    <div class="tooltip hover:tooltip-open tooltip-bottom" data-tip="Our GitHub">
-                        <a href="https://github.com/DevsDenBD" target="_blank">
-                            <i class="fa-brands fa-github text-2xl"></i>
-                        </a>
-                    </div>
-                    <div class="tooltip hover:tooltip-open tooltip-bottom" data-tip="Join Our Slack">
-                        <a href="https://join.slack.com/t/devsdenbd/shared_invite/zt-1iju8b5f5-ZRvxwnuPiBbz4MkuTbJO8A" target="_blank">
-                            <i class="fa-brands fa-slack text-2xl"></i>
-                        </a>
-                    </div>
-                    <div class="visible md:hidden">
-                        <a href="#email">
-                            <i class="fa-solid fa-envelope md:hidden text-2xl"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+                        </li>
+                        <li class="tooltip hover:tooltip-open tooltip-bottom" data-tip="Our GitHub">
+                            <a href="https://github.com/devsden1" target="_blank">
+                                <i class="fa-brands fa-github text-2xl"></i>
+                            </a>
+                        </li>
+                        <li class="tooltip hover:tooltip-open tooltip-bottom" data-tip="Join Our Slack">
+                            <a href="https://join.slack.com/t/devsdenbd/shared_invite/zt-1iju8b5f5-ZRvxwnuPiBbz4MkuTbJO8A" target="_blank">
+                                <i class="fa-brands fa-slack text-2xl"></i>
+                            </a>
+                        </li>
+                        <li class="visible md:hidden">
+                            <a href="#email">
+                                <i class="fa-solid fa-envelope md:hidden text-2xl"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </>
+            </ul>
         </div>
     </nav>
     <!------- Header Banner Section -------> 
@@ -103,7 +105,7 @@
         <!-------------------------
             BANNER CARD
         --------------------------->
-        <section class="container mx-auto pb-12 md:pb-0 relative -top-0 md:-top-28">
+        <section class="container mx-auto pb-12 md:pb-0 relative -top-4 md:-top-28">
             <div class="flex flex-wrap gap-8 px-8 md:flex justify-center">
                 <!------- card 1 ------->
                 <div class="group card rounded-none w-96 bg-slate-900/95 bg-gradient-to-r hover:from-indigo-200 hover:to-purple-200 hover:backdrop-blur-sm shadow-2xl">
@@ -149,7 +151,7 @@
         <!-----------------------------------
             SERVICES SECTION
         ------------------------------------>
-        <section id="service" class="bg-slate-800 text-white py-12 relative -top-12">
+        <section id="service" class="bg-slate-800 text-white py-12 relative top-0 md:-top-12">
             <div class="container mx-auto">
                 <h2 class="font-bold text-2xl md:text-3xl text-indigo-600 px-4 md:px-0 pb-2"><i class="fa-solid fa-minus"></i> What We're Offering to Our Clients</h2>
                 <div class="grid grid-cols-1 lg:grid-cols-2 justify-center lg:gap-48 pb-12 px-4 md:px-0">
@@ -240,16 +242,16 @@
                         <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
                         <div class="text-center my-4">
                             <a href="https://github.com/msz5213" target="_blank">
-                                <i class="fa-brands fa-github text-2xl h-8 rounded-full mx-3" style="color:#202124;"></i>
+                                <i class="fa-brands fa-github text-2xl h-8 rounded-full mx-3"></i>
                             </a>
                             <a href="https://www.linkedin.com/in/zamanmd/" target="_blank">
-                                <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3" style="color:#0A66C2;"></i>
+                                <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3"></i>
                             </a>
                             <!-- <a href="https://twitter.com/" target="_blank">
-                                <i class="fa-brands fa-twitter text-2xl h-8 rounded-full mx-3" style="color:#1D9BF0;"></i>
+                                <i class="fa-brands fa-twitter text-2xl h-8 rounded-full mx-3"></i>
                             </a> -->
                             <a href="https://msz5213.github.io/mdzamanportfolio/" target="_blank">
-                                <i class="fa-solid fa-globe text-2xl h-8 rounded-full mx-3" style="color:#000000;"></i>
+                                <i class="fa-solid fa-globe text-2xl h-8 rounded-full mx-3"></i>
                             </a>
                         </div>
                     </div>
@@ -268,13 +270,13 @@
                         <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
                         <div class="text-center my-4">
                             <a href="https://github.com/Mahbub091" target="_blank">
-                                <i class="fa-brands fa-github text-2xl h-8 rounded-full mx-3" style="color:#202124;"></i>
+                                <i class="fa-brands fa-github text-2xl h-8 rounded-full mx-3"></i>
                             </a>
                             <a href="https://www.linkedin.com/in/mahbubrahman091/" target="_blank">
-                                <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3" style="color:#0A66C2;"></i>
+                                <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3"></i>
                             </a>
                             <a href="https://twitter.com/tom_sqa" target="_blank">
-                                <i class="fa-brands fa-twitter text-2xl h-8 rounded-full mx-3" style="color:#1D9BF0;"></i>
+                                <i class="fa-brands fa-twitter text-2xl h-8 rounded-full mx-3"></i>
                             </a>
                         </div>
                     </div>
@@ -293,13 +295,13 @@
                         <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
                         <div class="text-center my-4">
                             <a href="https://github.com/TalhaBinAshraf1" target="_blank">
-                                <i class="fa-brands fa-github text-2xl h-8 w-4 rounded-full mx-3" style="color:#202124;"></i>
+                                <i class="fa-brands fa-github text-2xl h-8 w-4 rounded-full mx-3"></i>
                             </a>
                             <a href="https://www.linkedin.com/in/talha-sqa-engineer/" target="_blank">
-                                <i class="fa-brands fa-linkedin text-2xl h-8 w-4 rounded-full mx-3" style="color:#0A66C2;"></i>
+                                <i class="fa-brands fa-linkedin text-2xl h-8 w-4 rounded-full mx-3"></i>
                             </a>
                             <a href="https://twitter.com/talhabinashraf" target="_blank">
-                                <i class="fa-brands fa-twitter text-2xl h-8 w-4 rounded-full mx-3" style="color:#1D9BF0;"></i>
+                                <i class="fa-brands fa-twitter text-2xl h-8 w-4 rounded-full mx-3"></i>
                             </a>
                         </div>
                     </div>
@@ -318,13 +320,13 @@
                         <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
                         <div class="text-center my-4">
                             <a href="https://github.com/asif-iqbal-sqa" target="_blank">
-                                <i class="fa-brands fa-github text-2xl h-8 w-4 rounded-full mx-3" style="color:#202124;"></i>
+                                <i class="fa-brands fa-github text-2xl h-8 w-4 rounded-full mx-3"></i>
                             </a>
                             <a href="https://www.linkedin.com/in/asifiqbal-sqa/" target="_blank">
-                                <i class="fa-brands fa-linkedin text-2xl h-8 w-4 rounded-full mx-3" style="color:#0A66C2;"></i>
+                                <i class="fa-brands fa-linkedin text-2xl h-8 w-4 rounded-full mx-3"></i>
                             </a>
                             <a href="https://twitter.com/asifiqbalsqa" target="_blank">
-                                <i class="fa-brands fa-twitter text-2xl h-8 w-4 rounded-full mx-3" style="color:#1D9BF0;"></i>
+                                <i class="fa-brands fa-twitter text-2xl h-8 w-4 rounded-full mx-3"></i>
                             </a>
                         </div>
                     </div>
@@ -343,13 +345,13 @@
                         <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
                         <div class="text-center my-4">
                             <a href="https://github.com/muhib-dev" target="_blank">
-                                <i class="fa-brands fa-github text-2xl h-8 rounded-full mx-3" style="color:#202124;"></i>
+                                <i class="fa-brands fa-github text-2xl h-8 rounded-full mx-3"></i>
                             </a>
                             <a href="https://www.linkedin.com/in/muhibullah-khandaker/" target="_blank">
-                                <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3" style="color:#0A66C2;"></i>
+                                <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3"></i>
                             </a>
                             <a href="https://docs.google.com/document/d/1MWCXVYZEl6aXu4zZst2fEW9qLHkViZyPUMhvJt99Xf0/edit" target="_blank">
-                                <i class="fa-solid fa-globe text-2xl h-8 rounded-full mx-3" style="color:#000000;"></i>
+                                <i class="fa-solid fa-globe text-2xl h-8 rounded-full mx-3"></i>
                             </a>
                         </div>
                     </div>
@@ -368,13 +370,13 @@
                         <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
                         <div class="text-center my-4">
                             <a href="http://www.github.com/shahed-webdev" target="_blank">
-                                <i class="fa-brands fa-github text-2xl h-8 rounded-full mx-3" style="color:#202124;"></i>
+                                <i class="fa-brands fa-github text-2xl h-8 rounded-full mx-3"></i>
                             </a>
                             <a href="http://linkedin.com/in/shahed-al-mahmud" target="_blank">
-                                <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3" style="color:#0A66C2;"></i>
+                                <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3"></i>
                             </a>
                             <a href="https://docs.google.com/document/d/1U2HzdXgm9SAJURptBRxkYbjiT6OzTz7Q0epU5Mw7WS0" target="_blank">
-                                <i class="fa-solid fa-globe text-2xl h-8 rounded-full mx-3" style="color:#000000;"></i>
+                                <i class="fa-solid fa-globe text-2xl h-8 rounded-full mx-3"></i>
                             </a>
                         </div>
                     </div>
@@ -393,13 +395,13 @@
                         <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
                         <div class="text-center my-4">
                             <a href="https://github.com/mdmmalamin" target="_blank">
-                                <i class="fa-brands fa-github text-2xl h-8 rounded-full mx-3" style="color:#202124;"></i>
+                                <i class="fa-brands fa-github text-2xl h-8 rounded-full mx-3"></i>
                             </a>
                             <a href="https://www.linkedin.com/in/mdmmalamin/" target="_blank">
-                                <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3" style="color:#0A66C2;"></i>
+                                <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3"></i>
                             </a>
                             <a href="https://twitter.com/mdmmalamin" target="_blank">
-                                <i class="fa-brands fa-twitter text-2xl h-8 rounded-full mx-3" style="color:#1D9BF0;"></i>
+                                <i class="fa-brands fa-twitter text-2xl h-8 rounded-full mx-3"></i>
                             </a>
                         </div>
                     </div>
@@ -418,13 +420,13 @@
                         <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
                         <div class="text-center my-4">
                             <a href="https://www.behance.net/abzaman7/" target="_blank">
-                                <i class="fa-brands fa-square-behance text-2xl h-8 rounded-full mx-3" style="color:#202124;"></i>
+                                <i class="fa-brands fa-square-behance text-2xl h-8 rounded-full mx-3"></i>
                             </a>
                             <a href="https://www.linkedin.com/in/abzaman/" target="_blank">
-                                <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3" style="color:#0A66C2;"></i>
+                                <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3"></i>
                             </a>
-                            <a href="        dribble: 'https://dribbble.com/ab_designs__/" target="_blank">
-                                <i class="fa-brands fa-square-dribbble text-2xl h-8 rounded-full mx-3" style="color:#202124;"></i>
+                            <a href="https://dribbble.com/ab_designs__/" target="_blank">
+                                <i class="fa-brands fa-square-dribbble text-2xl h-8 rounded-full mx-3"></i>
                             </a>
                         </div>
                     </div>
@@ -445,16 +447,16 @@
                 </div>
                 <p>We work with a passion of taking challenges and creating new ones in advertising sector.</p>
                 <div class="pt-4 whitespace-nowrap">
-                    <!-- <a href="https://www.facebook.com/DevsDenBD/" target="_blank"><i class="fa-brands fa-facebook text-2xl bg-slate-700 text-[#0D88EF] rounded-full p-2 mr-3"></i></a>
-                    <a href="https://www.linkedin.com/company/devsdenbd/" target="_blank"><i class="fa-brands fa-linkedin text-2xl bg-slate-700 text-[#0A66C2] rounded-full p-2 mr-3"></i></a>
-                    <a href="https://twitter.com/DevsDenBD" target="_blank"><i class="fa-brands fa-twitter text-2xl bg-slate-700 text-[#1D9BF0] rounded-full p-2 mr-3"></i></a>
-                    <a href="https://github.com/DevsDenBD" target="_blank"><i class="fa-brands fa-github text-2xl bg-slate-700 text-[#B9BBBD] rounded-full p-2 mr-3"></i></a>
-                    <a href="https://join.slack.com/t/devsdenbd/shared_invite/zt-1iju8b5f5-ZRvxwnuPiBbz4MkuTbJO8A" target="_blank"><i class="fa-brands fa-slack text-2xl bg-slate-700 text-slate-300 rounded-full p-2 mr-3"></i></a> -->
-                    <a href="https://www.facebook.com/DevsDenBD/" target="_blank"><img class="w-12 inline bg-slate-200 rounded-lg p-1.5 mr-3" src="./assets/icon/logo/facebook.ico" alt=""></a>
+                    <a href="https://www.facebook.com/DevsDenBD/" target="_blank"><i class="fa-brands fa-facebook text-2xl bg-slate-700 text-slate-200 rounded-full w-10 h-10 text-center py-2 mr-3"></i></a>
+                    <a href="https://www.linkedin.com/company/devsdenbd/" target="_blank"><i class="fa-brands fa-linkedin-in text-2xl bg-slate-700 text-slate-200 rounded-full w-10 h-10 text-center py-2 mr-3"></i></a>
+                    <a href="https://twitter.com/DevsDenBD" target="_blank"><i class="fa-brands fa-twitter text-2xl bg-slate-700 text-slate-200 rounded-full w-10 h-10 text-center py-2 mr-3"></i></a>
+                    <a href="https://github.com/DevsDen1" target="_blank"><i class="fa-brands fa-github text-2xl bg-slate-700 text-slate-200 rounded-full w-10 h-10 text-center py-2 mr-3"></i></a>
+                    <a href="https://join.slack.com/t/devsdenbd/shared_invite/zt-1iju8b5f5-ZRvxwnuPiBbz4MkuTbJO8A" target="_blank"><i class="fa-brands fa-slack text-2xl bg-slate-700 text-slate-200 rounded-full w-10 h-10 text-center py-2 mr-3"></i></a>
+                    <!-- <a href="https://www.facebook.com/DevsDenBD/" target="_blank"><img class="w-12 inline bg-slate-200 rounded-lg p-1.5 mr-3" src="./assets/icon/logo/facebook.ico" alt=""></a>
                     <a href="https://www.linkedin.com/company/devsdenbd/" target="_blank"><img class="w-12 inline bg-slate-200 rounded-lg p-1.5 mr-3" src="./assets/icon/logo/linkedin.ico" alt=""></a>
-                    <a href="https://twitter.com/DevsDen12" target="_blank"><img class="w-12 inline bg-slate-200 rounded-lg p-1.5 mr-3" src="./assets/icon/logo/twitter.ico" alt=""></a>
+                    <a href="https://twitter.com/devsdenbd" target="_blank"><img class="w-12 inline bg-slate-200 rounded-lg p-1.5 mr-3" src="./assets/icon/logo/twitter.ico" alt=""></a>
                     <a href="https://github.com/DevsDen1" target="_blank"><img class="w-12 inline bg-slate-200 rounded-lg p-1.5 mr-3" src="./assets/icon/logo/github.ico" alt=""></a>
-                    <a href="https://join.slack.com/t/devsdenbd/shared_invite/zt-1iju8b5f5-ZRvxwnuPiBbz4MkuTbJO8A" target="_blank"><img class="w-12 inline bg-slate-200 rounded-lg p-1.5 mr-3" src="./assets/icon/logo/slack.ico" alt=""></a>
+                    <a href="https://join.slack.com/t/devsdenbd/shared_invite/zt-1iju8b5f5-ZRvxwnuPiBbz4MkuTbJO8A" target="_blank"><img class="w-12 inline bg-slate-200 rounded-lg p-1.5 mr-3" src="./assets/icon/logo/slack.ico" alt=""></a> -->
                 </div>
             </section>
             <section class="flex flex-col md:flex-row gap-12 lg:gap-32">
@@ -462,18 +464,17 @@
                     <h2 class="text-2xl font-semibold pb-4 text-white">Links</h2>
                     <div class="border-b-2 border-purple-500 w-12 mb-4"></div>
                     <ul class="whitespace-nowrap">
-                        <li class=""><a href="#contact">About us</a></li>
+                        <li class=""><a href="#about">About us</a></li>
                         <li class=""><a href="#our-team">Meet our team</a></li>
-                        <!-- <li class=""><a href="">Our Projects</a></li> -->
                         <li class=""><a href="#service">Our Services</a></li>
-                        <li class=""><a href="#contact">Contacts</a></li>
+                        <li class=""><a href="#contact">Contact Us</a></li>
                     </ul>
                 </section>
                 <section>
                     <h2 class="text-2xl font-semibold pb-4 text-white">Queries</h2>
                     <div class="border-b-2 border-purple-500 w-12 mb-4"></div>
                     <p class="text-justify">We would love to here about your ideas and discuss how we can help you to reach your ultimate goal. Please send us email to get in touch and possible discussion schedule.</p>
-                    <form action="mailto: Info@devsdenbd.com" method="POST" enctype="application/x-www-form-urlencoded">
+                    <form action="mailto: Info@devsdenbd.com" method="POST">
                         <input type="email" name="email" id="email" placeholder="Email Address"
                             class="mt-4 px-3 py-2.5 w-4/6">
                         <button type="submit"><i class="fa-solid fa-paper-plane bg-slate-700 border-none p-3.5"></i></button>
@@ -482,9 +483,9 @@
                 <section>
                     <h2 id="contact" class="text-2xl font-semibold pb-4 text-white">Contact</h2>
                     <div class="border-b-2 border-purple-500 w-12 mb-4"></div>
-                    <p class="whitespace-nowrap"><i class="fa-sharp fa-solid fa-phone-volume text-slate-300 mr-2"></i> +880 17777 00000</p>
-                    <p class="whitespace-nowrap"><i class="fa-solid fa-envelope text-slate-300 mr-2"></i> Info@devsdenbd.com</p>
-                    <p><i class="fa-solid fa-location-dot text-slate-300 mr-3"></i> Mirpur-1, Dhaka</p>
+                    <p class="whitespace-nowrap"><i class="fa-sharp fa-solid fa-phone-volume text-slate-300 mr-4"></i>+880 17777 00000</p>
+                    <p class="whitespace-nowrap"><i class="fa-solid fa-envelope text-slate-300 mr-4"></i>Info@devsdenbd.com</p>
+                    <p><i class="fa-solid fa-location-dot text-slate-300 mr-5"></i>Mirpur-1, Dhaka</p>
                 </section>
             </section>
         </section>
