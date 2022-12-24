@@ -8,6 +8,15 @@
     <meta name="Description" content="Devs Den BD tech is a custom software development company of qa automation, software quality assurance, web designers, mobile app development, web development.">
     <meta name="author" content="Software Development Company - Devs Den BD Technologies">
     <title>Devs Den BD | Technology & IT Solutions</title>
+    <!-- Link Swiper's CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <link rel="stylesheet" href="./main/style.css">
     <link rel="stylesheet" href="./public/tailwind-style.css">
@@ -53,23 +62,23 @@
                 <li class="basis-1/2">
                     <ul class="flex flex-wrap md:flex-nowrap md:justify-end items-center gap-6 mx-4 my-6 md:m-0">
                         <li class="tooltip hover:tooltip-open tooltip-bottom basis-full md:basis-0 order-last md:order-first" data-tip="Book Your Meeting">
-                            <div class="border-2 rounded-full bg-white text-black/80 backdrop-blur-sm font-bold px-3 py-0.5 whitespace-nowrap">
-                                <a href="https://calendly.com/devsden/meeting-at-google-meet?month=2022-12" target="_blank" >
+                            <div class="rounded-full bg-white hover:bg-indigo-600 hover:text-white text-black/80 backdrop-blur-sm font-bold px-3 py-0.5 whitespace-nowrap">
+                                <a href="https://calendly.com/devsdenbd/let-s-talk" target="_blank" >
                                     Book A Call
                                 </a>
                             </div>
                         </li>
-                        <li class="tooltip hover:tooltip-open tooltip-bottom" data-tip="Our Linkedin">
+                        <li class="tooltip hover:tooltip-open hover:text-indigo-600 tooltip-bottom" data-tip="Our Linkedin">
                             <a href="https://www.linkedin.com/company/devsdenbd/" target="_blank">
                                 <i class="fa-brands fa-linkedin-in text-2xl"></i>
                             </a>
                         </li>
-                        <li class="tooltip hover:tooltip-open tooltip-bottom" data-tip="Our GitHub">
+                        <li class="tooltip hover:tooltip-open hover:text-indigo-600 tooltip-bottom" data-tip="Our GitHub">
                             <a href="https://github.com/devsden1" target="_blank">
                                 <i class="fa-brands fa-github text-2xl"></i>
                             </a>
                         </li>
-                        <li class="tooltip hover:tooltip-open tooltip-bottom" data-tip="Join Our Slack">
+                        <li class="tooltip hover:tooltip-open hover:text-indigo-600 tooltip-bottom" data-tip="Join Our Slack">
                             <a href="https://join.slack.com/t/devsdenbd/shared_invite/zt-1iju8b5f5-ZRvxwnuPiBbz4MkuTbJO8A" target="_blank">
                                 <i class="fa-brands fa-slack text-2xl"></i>
                             </a>
@@ -85,27 +94,27 @@
         </div>
     </nav>
     <!------- Header Banner Section -------> 
-    <section class="bg-no-repeat bg-cover bg-center relative -top-20 md:-top-16 min-h-[60vh]" style="background-image: url(./assets/rear-view-programmer-working-all-night-long.jpg)">
-        <!-- <img src="./assets/banner.jpg" alt=""> -->
-        <!-- <div class="container mx-auto text-center relative top-32">
-            <h3 class="underline underline-offset-8 font-semibold text-[2vw] lg:text-[1vw] text-slate-300">
-                EXPERIENCE THE BEST IT SOLUTIONS
-            </h3>
-            <h1 class="font-bold text-[8vw] md:text-[6vw] lg:text-[5vw] xl:text-[4vw] text-white relative my-0 leading-tight">
-                TECH SOLUTIONS
-                <br />
-                <span class="text-[10vw] md:text-[5vw] text-purple-500" style="font-family: 'Architects Daughter', cursive;">&</span>
-                <br />
-                SERVICES
-            </h1>
-        </div> -->
+    <!-- <section class="bg-no-repeat bg-cover bg-center relative -top-20 md:-top-16 min-h-[60vh]" style="background-image: url(./assets/rear-view-programmer-working-all-night-long.jpg)">
+    </section> -->
+    <section class="container mx-auto flex flex-col-reverse md:flex-row gap-0 md:gap-12 py-20 md:py-32 relative">
+        <h1 class="text-2xl md:text-7xl font-bold mt-20 md:mt-0">Global software development 
+            <br> partner in 
+            <span>IT staff augmentation,</span>
+            <span>data analytics,</span>
+            <span>FinTech</span>
+            <br>
+            with 1400+ developers on board
+        </h1>
+        <div class="ml-10 mr-40">
+            <a class="w-20 h-20 md:w-28 md:h-28 bg-red-700 text-white text-sm md:text-lg rounded-full flex justify-center items-center absolute md:static top-12 md:top-20 right-12 md:-right-0 animate__animated animate__heartBeat animate__infinite" href="https://calendly.com/devsdenbd/let-s-talk">Let's Talk</a>
+        </div>
     </section>
 
     <main class="">
         <!-------------------------
             BANNER CARD
         --------------------------->
-        <section class="container mx-auto pb-12 md:pb-0 relative -top-4 md:-top-28">
+        <section class="container mx-auto pb-12">
             <div class="flex flex-wrap gap-8 px-8 md:flex justify-center">
                 <!------- card 1 ------->
                 <div class="group card rounded-none w-96 bg-slate-900/95 bg-gradient-to-r hover:from-indigo-200 hover:to-purple-200 hover:backdrop-blur-sm shadow-2xl">
@@ -131,27 +140,13 @@
                         <p class="py-4 text-slate-300 group-hover:text-slate-700 font-semibold text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
                     </div>
                 </div>
-                <!-- ----- card 3 -----
-                <div class="group card rounded-none w-96 bg-white hover:bg-indigo-700/90 hover:backdrop-blur-sm shadow-2xl">
-                    <div class="absolute top-0 right-0 h-5 w-5 bg-purple-400/75 backdrop-blur-sm"></div>
-                    <div class="card-body relative grid grid-cols-4">
-                        <div class="col-span-3">
-                            <h1 class="card-title font-bold text-2xl group-hover:text-white">CLOUD BASED SERVICES</h1>
-                            <p class="py-4 text-slate-700 group-hover:text-slate-300 font-semibold">When an unknown printer took a galley type
-                                book.</p>
-                        </div>
-                        <div class="card-actions justify-end text-6xl text-slate-500 group-hover:text-slate-400 items-end">
-                            <span>03</span>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </section>
 
         <!-----------------------------------
             SERVICES SECTION
         ------------------------------------>
-        <section id="service" class="bg-slate-800 text-white py-12 relative top-0 md:-top-12">
+        <section id="service" class="bg-slate-800 text-white py-12">
             <div class="container mx-auto">
                 <h2 class="font-bold text-2xl md:text-3xl text-indigo-600 px-4 md:px-0 pb-2"><i class="fa-solid fa-minus"></i> What We're Offering to Our Clients</h2>
                 <div class="grid grid-cols-1 lg:grid-cols-2 justify-center lg:gap-48 pb-12 px-4 md:px-0">
@@ -162,276 +157,344 @@
                 <!--------------------------
                     SERVICES CARD
                 ---------------------------->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-24 pt-12 justify-between justify-items-center">
-                    <a id="service" href="#service">
-                        <div class="relative w-64">
-                            <div class="group h-[320px] bg-slate-900 hover:bg-white text-center pt-20 pb-10">
-                                <h2 class="text-xl font-bold text-white group-hover:text-black pb-2 px-6">SOFTWARE DEVELOPMENT</h2>
-                                <p class="text-slate-400 group-hover:text-slate-700 px-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, necessitatibus. amet, consectetur adipisicing elit. Consequuntur, necessitatibus</p>
-                                <div class="w-full absolute top-[-64px]">
-                                    <div class="h-32 w-32 border border-slate-900 group-hover:border-white rounded-full mx-auto bg-slate-900 group-hover:bg-white"><img class="w-24 m-3.5 p-3" src="./assets/icon/code.png" alt="software development">
+
+                <section class="w-[80%] mx-auto py-20 swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide bg-cover bg-center w-72">
+                            <a id="service" href="#service">
+                                <div class="relative w-72">
+                                    <div class="group h-[320px] bg-slate-900 hover:bg-white text-center pt-16 pb-10 relative">
+                                        <h2 class="text-xl font-bold text-white group-hover:text-black pb-2 px-6">Software Development</h2>
+                                        <p class="text-slate-400 group-hover:text-slate-700 px-6 text-justify">Software developers design, program, build, deploy and maintain software using many different skills and tools. They also help build software systems that power networks and devices and ensure that those systems remain functional.</p>
+                                        <div class="w-full absolute top-[-64px]">
+                                            <div class="h-32 w-32 border border-slate-900 group-hover:border-white rounded-full mx-auto bg-slate-900 group-hover:bg-white"><img class="w-24 m-3.5 p-3" src="./assets/icon/code.png" alt="software development">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <!-- <i class="fa-solid fa-bug text-6xl text-purple-500 group-hover:text-white w-32 h-32 bg-slate-900 group-hover:bg-indigo-700 p-8 rounded-full"></i> -->
                                 </div>
-                            </div>
+                            </a>
                         </div>
-                    </a>
-                    <a id="service" href="#service">
-                        <div class="relative w-64">
-                            <div class="group h-[320px] bg-slate-900 hover:bg-white text-center pt-20 pb-10">
-                                <h2 class="text-xl font-bold text-white group-hover:text-black pb-2 px-6">SOFTWARE TESTING</h2>
-                                <p class="text-slate-400 group-hover:text-slate-700 px-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, necessitatibus. amet, consectetur adipisicing elit. Consequuntur, necessitatibus</p>
-                                <div class="w-full absolute top-[-64px]">
-                                    <div class="h-32 w-32 border border-slate-900 group-hover:border-white rounded-full mx-auto bg-slate-900 group-hover:bg-white"><img class="w-24 m-3.5" src="./assets/icon/debugging-outline.png" alt="software development">
+                        <div class="swiper-slide bg-cover bg-center w-72">
+                            <a id="service" href="#service">
+                                <div class="relative w-72">
+                                    <div class="group h-[320px] bg-slate-900 hover:bg-white text-center pt-16 pb-10">
+                                        <h2 class="text-xl font-bold text-white group-hover:text-black pb-2 px-6">Software Testing</h2>
+                                        <p class="text-slate-400 group-hover:text-slate-700 px-6 text-justify">Software testing is the process of evaluating and verifying that a software product or application does what it is supposed to do. The benefits of testing include preventing bugs, reducing development costs and improving performance.</p>
+                                        <div class="w-full absolute top-[-64px]">
+                                            <div class="h-32 w-32 border border-slate-900 group-hover:border-white rounded-full mx-auto bg-slate-900 group-hover:bg-white"><img class="w-24 m-3.5" src="./assets/icon/debugging-outline.png" alt="software development">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <!-- <i class="fa-solid fa-bug text-6xl text-purple-500 group-hover:text-white w-32 h-32 bg-slate-900 group-hover:bg-indigo-700 p-8 rounded-full"></i> -->
                                 </div>
-                            </div>
+                            </a>
                         </div>
-                    </a>
-                    <a id="service" href="#service">
-                        <div class="relative w-64">
-                            <div class="group h-[320px] bg-slate-900 hover:bg-white text-center pt-20 pb-10">
-                                <h2 class="text-xl font-bold text-white group-hover:text-black pb-2 px-6">CLOUD BASED SERVICES</h2>
-                                <p class="text-slate-400 group-hover:text-slate-700 px-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, necessitatibus. amet, consectetur adipisicing elit. Consequuntur, necessitatibus</p>
-                                <div class="w-full absolute top-[-64px]">
-                                    <div class="h-32 w-32 border border-slate-900 group-hover:border-white rounded-full mx-auto bg-slate-900 group-hover:bg-white"><img class="w-24 m-3.5 p-2" src="./assets/icon/service-provider.png" alt="software development">
+                        <div class="swiper-slide bg-cover bg-center w-72">
+                            <a id="service" href="#service">
+                                <div class="relative w-72">
+                                    <div class="group h-[320px] bg-slate-900 hover:bg-white text-center pt-16 pb-10">
+                                        <h2 class="text-xl font-bold text-white group-hover:text-black pb-2 px-6">Cloud Base Services</h2>
+                                        <p class="text-slate-400 group-hover:text-slate-700 px-6 text-justify">Cloud based services provide information technology (IT) as a service over the Internet or dedicated network, with delivery on demand, and payment based on usage.</p>
+                                        <div class="w-full absolute top-[-64px]">
+                                            <div class="h-32 w-32 border border-slate-900 group-hover:border-white rounded-full mx-auto bg-slate-900 group-hover:bg-white"><img class="w-24 m-3.5 p-2" src="./assets/icon/service-provider.png" alt="software development">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <!-- <i class="fa-solid fa-bug text-6xl text-purple-500 group-hover:text-white w-32 h-32 bg-slate-900 group-hover:bg-indigo-700 p-8 rounded-full"></i> -->
                                 </div>
-                            </div>
+                            </a>
                         </div>
-                    </a>
-                    <a id="service" href="#service">
-                        <div class="relative w-64">
-                            <div class="group h-[320px] bg-slate-900 hover:bg-white text-center pt-20 pb-10">
-                                <h2 class="text-xl font-bold text-white group-hover:text-black pb-2 px-6">Security System</h2>
-                                <p class="text-slate-400 group-hover:text-slate-700 px-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, necessitatibus. amet, consectetur adipisicing elit. Consequuntur, necessitatibus</p>
-                                <div class="w-full absolute top-[-64px]">
-                                    <div class="h-32 w-32 border border-slate-900 group-hover:border-white rounded-full mx-auto bg-slate-900 group-hover:bg-white"><img class="w-24 m-3.5" src="./assets/icon/saas.png" alt="software development">
+                        <div class="swiper-slide bg-cover bg-center w-72">
+                            <a id="service" href="#service">
+                                <div class="relative w-72">
+                                    <div class="group h-[320px] bg-slate-900 hover:bg-white text-center pt-16 pb-10">
+                                        <h2 class="text-xl font-bold text-white group-hover:text-black pb-2 px-6">Security System</h2>
+                                        <p class="text-slate-400 group-hover:text-slate-700 px-6 text-justify">What is an IT security system? Image result for it security system Information systems security, more commonly referred to as INFOSEC, refers to the processes and methodologies involved with keeping, available, and assuring its integrity.</p>
+                                        <div class="w-full absolute top-[-64px]">
+                                            <div class="h-32 w-32 border border-slate-900 group-hover:border-white rounded-full mx-auto bg-slate-900 group-hover:bg-white"><img class="w-24 m-3.5" src="./assets/icon/saas.png" alt="software development">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <!-- <i class="fa-solid fa-bug text-6xl text-purple-500 group-hover:text-white w-32 h-32 bg-slate-900 group-hover:bg-indigo-700 p-8 rounded-full"></i> -->
                                 </div>
-                            </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
+                        <div class="swiper-slide bg-cover bg-center w-72">
+                            <a id="service" href="#service">
+                                <div class="relative w-72">
+                                    <div class="group h-[320px] bg-slate-900 hover:bg-white text-center pt-16 pb-10">
+                                        <h2 class="text-xl font-bold text-white group-hover:text-black pb-2 px-6">Web Analytics</h2>
+                                        <p class="text-slate-400 group-hover:text-slate-700 px-6 text-justify">Website analytics provide insights and data that can be used to create a better user experience for website visitor. Understanding customer behavior is also key to optimizing a website for key conversion metrics.</p>
+                                        <div class="w-full absolute top-[-64px]">
+                                            <div class="h-32 w-32 border border-slate-900 group-hover:border-white rounded-full mx-auto bg-slate-900 group-hover:bg-white"><img class="w-24 m-3.5" src="./assets/icon/saas.png" alt="software development">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide bg-cover bg-center w-72">
+                            <a id="service" href="#service">
+                                <div class="relative w-72">
+                                    <div class="group h-[320px] bg-slate-900 hover:bg-white text-center pt-16 pb-10">
+                                        <h2 class="text-xl font-bold text-white group-hover:text-black pb-2 px-6">DevOps</h2>
+                                        <p class="text-slate-400 group-hover:text-slate-700 px-6 text-justify">DevOps is the combination of practices and tools designed to increase an organization's ability to deliver applications and services faster than traditional software development processes.</p>
+                                        <div class="w-full absolute top-[-64px]">
+                                            <div class="h-32 w-32 border border-slate-900 group-hover:border-white rounded-full mx-auto bg-slate-900 group-hover:bg-white"><img class="w-24 m-3.5" src="./assets/icon/saas.png" alt="software development">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide bg-cover bg-center w-72">
+                            <a id="service" href="#service">
+                                <div class="relative w-72">
+                                    <div class="group h-[320px] bg-slate-900 hover:bg-white text-center pt-16 pb-10">
+                                        <h2 class="text-xl font-bold text-white group-hover:text-black pb-2 px-6">IT Consulting</h2>
+                                        <p class="text-slate-400 group-hover:text-slate-700 px-6 text-justify">IT consulting services are advisory services that help clients assess different technology strategies and, in doing so, align their technology strategies with their business or process strategies.</p>
+                                        <div class="w-full absolute top-[-64px]">
+                                            <div class="h-32 w-32 border border-slate-900 group-hover:border-white rounded-full mx-auto bg-slate-900 group-hover:bg-white"><img class="w-24 m-3.5" src="./assets/icon/saas.png" alt="software development">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
             </div>
         </section>
 
         <!----------------------------------
             OUR TEAM
         ------------------------------------>
-        <section id="our-team" class="container mx-auto py-12">
+        <section id="our-team" class="container mx-auto py-12 relative">
             <h2 class="font-bold text-2xl md:text-3xl text-indigo-600 px-4 md:px-0 py-2"><i class="fa-solid fa-minus"></i> Our Expert People</h2>
             <div class="grid grid-cols-1 lg:grid-cols-2 justify-center lg:gap-48 pb-12 px-4 md:px-0">
                 <h1 class="font-bold text-3xl md:text-5xl pb-8">Meet Our Professional Team Members</h1>
                 <p class="text-justify pb-8">There are many variations of passages of available but majority have suffered alteration in some form, by humou or randomised words which don't look ever slightly believable.</p>
             </div>
-            <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-between justify-items-center">
-                <!------- Md Shahnewaz Zaman ------->
-                <section class="w-72 p-4 border-1 bg-gradient-to-r from-zinc-100 to-indigo-100  hover:from-indigo-100 hover:to-purple-100 relative">
-                    <div class="w-48 mx-auto rounded-full bg-gradient-to-r from-indigo-600 to-purple-500">
-                        <img class="w-48 p-1 rounded-full" src="./assets/team/shahnewaz.jpg" alt="Md Shahnewaz Zaman">
+            <div class="w-[80%] mx-auto py-20 swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide bg-cover bg-center w-72">
+                        <!------- Md Shahnewaz Zaman ------->
+                        <section class="w-72 p-4 border-1 bg-gradient-to-r from-zinc-100 to-indigo-100  hover:from-indigo-100 hover:to-purple-100 relative">
+                            <div class="w-48 mx-auto rounded-full bg-gradient-to-r from-indigo-600 to-purple-500">
+                                <img class="w-48 p-1 rounded-full" src="./assets/team/shahnewaz.jpg" alt="Md Shahnewaz Zaman">
+                            </div>
+                            <div class="my-4">
+                                <div class="text-center">
+                                    <h2 class="font-semibold">Md Shahnewaz Zaman</h2>
+                                    <p class="text-slate-500">Tech Lead</p>
+                                </div>
+                                <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
+                                <div class="text-center my-4">
+                                    <a href="https://github.com/msz5213" target="_blank">
+                                        <i class="fa-brands fa-github text-2xl h-8 rounded-full mx-3"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/zamanmd/" target="_blank">
+                                        <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3"></i>
+                                    </a>
+                                    <!-- <a href="https://twitter.com/" target="_blank">
+                                        <i class="fa-brands fa-twitter text-2xl h-8 rounded-full mx-3"></i>
+                                    </a> -->
+                                    <a href="https://msz5213.github.io/mdzamanportfolio/" target="_blank">
+                                        <i class="fa-solid fa-globe text-2xl h-8 rounded-full mx-3"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
                     </div>
-                    <div class="my-4">
-                        <div class="text-center">
-                            <h2 class="font-semibold">Md Shahnewaz Zaman</h2>
-                            <p class="text-slate-500">Tech Lead</p>
-                        </div>
-                        <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
-                        <div class="text-center my-4">
-                            <a href="https://github.com/msz5213" target="_blank">
-                                <i class="fa-brands fa-github text-2xl h-8 rounded-full mx-3"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/zamanmd/" target="_blank">
-                                <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3"></i>
-                            </a>
-                            <!-- <a href="https://twitter.com/" target="_blank">
-                                <i class="fa-brands fa-twitter text-2xl h-8 rounded-full mx-3"></i>
-                            </a> -->
-                            <a href="https://msz5213.github.io/mdzamanportfolio/" target="_blank">
-                                <i class="fa-solid fa-globe text-2xl h-8 rounded-full mx-3"></i>
-                            </a>
-                        </div>
+                    <div class="swiper-slide bg-cover bg-center w-72">
+                        <!-------  Md. Mahbubur Rahman (TOM) ------->
+                        <section class="w-72 p-4 border-1 bg-gradient-to-r from-zinc-100 to-indigo-100  hover:from-indigo-100 hover:to-purple-100 relative">
+                            <div class="w-48 mx-auto rounded-full bg-gradient-to-r from-indigo-600 to-purple-500">
+                                <img class="w-48 p-1 rounded-full" src="./assets/team/mahbubur.jpg" alt="Md. Mahbubur Rahman">
+                            </div>
+                            <div class="my-4">
+                                <div class="text-center">
+                                    <h2 class="font-semibold">Md. Mahbubur Rahman (TOM)</h2>
+                                    <p class="text-slate-500">SQA Engineer</p>
+                                    <p class="font-semibold"><small>Specialized in Automation</small></p>
+                                </div>
+                                <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
+                                <div class="text-center my-4">
+                                    <a href="https://github.com/Mahbub091" target="_blank">
+                                        <i class="fa-brands fa-github text-2xl h-8 rounded-full mx-3"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/mahbubrahman091/" target="_blank">
+                                        <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3"></i>
+                                    </a>
+                                    <a href="https://twitter.com/tom_sqa" target="_blank">
+                                        <i class="fa-brands fa-twitter text-2xl h-8 rounded-full mx-3"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
                     </div>
+                    <div class="swiper-slide bg-cover bg-center w-72">
+                        <!------- Talha Bin Ashraf ------->
+                        <section class="w-72 p-4 border-1 bg-gradient-to-r from-zinc-100 to-indigo-100  hover:from-indigo-100 hover:to-purple-100 relative">
+                            <div class="w-48 mx-auto rounded-full bg-gradient-to-r from-indigo-600 to-purple-500">
+                                <img class="w-48 p-1 rounded-full" src="./assets/team/talha.jpg" alt="Developer Amin">
+                            </div>
+                            <div class="my-4">
+                                <div class="text-center">
+                                    <h2 class="font-semibold">Talha Bin Ashraf</h2>
+                                    <p class="text-slate-500">SQA Engineer</p>
+                                    <p class="font-semibold"><small>Specialized in Automation</small></p>
+                                </div>
+                                <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
+                                <div class="text-center my-4">
+                                    <a href="https://github.com/TalhaBinAshraf1" target="_blank">
+                                        <i class="fa-brands fa-github text-2xl h-8 w-4 rounded-full mx-3"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/talha-sqa-engineer/" target="_blank">
+                                        <i class="fa-brands fa-linkedin text-2xl h-8 w-4 rounded-full mx-3"></i>
+                                    </a>
+                                    <a href="https://twitter.com/talhabinashraf" target="_blank">
+                                        <i class="fa-brands fa-twitter text-2xl h-8 w-4 rounded-full mx-3"></i>
+                                    </a>
+                                </div>
+                            </div>
                 </section>
-                <!-------  Md. Mahbubur Rahman (TOM) ------->
-                <section class="w-72 p-4 border-1 bg-gradient-to-r from-zinc-100 to-indigo-100  hover:from-indigo-100 hover:to-purple-100 relative">
-                    <div class="w-48 mx-auto rounded-full bg-gradient-to-r from-indigo-600 to-purple-500">
-                        <img class="w-48 p-1 rounded-full" src="./assets/team/mahbubur.jpg" alt="Md. Mahbubur Rahman">
                     </div>
-                    <div class="my-4">
-                        <div class="text-center">
-                            <h2 class="font-semibold">Md. Mahbubur Rahman (TOM)</h2>
-                            <p class="text-slate-500">SQA Engineer</p>
-                            <p class="font-semibold"><small>Specialized in Automation</small></p>
-                        </div>
-                        <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
-                        <div class="text-center my-4">
-                            <a href="https://github.com/Mahbub091" target="_blank">
-                                <i class="fa-brands fa-github text-2xl h-8 rounded-full mx-3"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/mahbubrahman091/" target="_blank">
-                                <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3"></i>
-                            </a>
-                            <a href="https://twitter.com/tom_sqa" target="_blank">
-                                <i class="fa-brands fa-twitter text-2xl h-8 rounded-full mx-3"></i>
-                            </a>
-                        </div>
+                    <div class="swiper-slide bg-cover bg-center w-72">
+                        <!------- Asif Iqbal ------->
+                        <section class="w-72 p-4 border-1 bg-gradient-to-r from-zinc-100 to-indigo-100  hover:from-indigo-100 hover:to-purple-100 relative">
+                            <div class="w-48 mx-auto rounded-full bg-gradient-to-r from-indigo-600 to-purple-500">
+                                <img class="w-48 p-1 rounded-full" src="./assets/team/iqbal.jpg" alt="Iqbal">
+                            </div>
+                            <div class="my-4">
+                                <div class="text-center">
+                                    <h2 class="font-semibold">Asif Iqbal</h2>
+                                    <p class="text-slate-500">SQA Engineer</p>
+                                    <p class="font-semibold"><small>ISTQB Certified</small></p>
+                                </div>
+                                <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
+                                <div class="text-center my-4">
+                                    <a href="https://github.com/asif-iqbal-sqa" target="_blank">
+                                        <i class="fa-brands fa-github text-2xl h-8 w-4 rounded-full mx-3"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/asifiqbal-sqa/" target="_blank">
+                                        <i class="fa-brands fa-linkedin text-2xl h-8 w-4 rounded-full mx-3"></i>
+                                    </a>
+                                    <a href="https://twitter.com/asifiqbalsqa" target="_blank">
+                                        <i class="fa-brands fa-twitter text-2xl h-8 w-4 rounded-full mx-3"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
                     </div>
-                </section>
-                <!------- Talha Bin Ashraf ------->
-                <section class="w-72 p-4 border-1 bg-gradient-to-r from-zinc-100 to-indigo-100  hover:from-indigo-100 hover:to-purple-100 relative">
-                    <div class="w-48 mx-auto rounded-full bg-gradient-to-r from-indigo-600 to-purple-500">
-                        <img class="w-48 p-1 rounded-full" src="./assets/team/talha.jpg" alt="Developer Amin">
+                    <div class="swiper-slide bg-cover bg-center w-72">
+                        <!------- Muhibullah ------->
+                        <section class="w-72 p-4 border-1 bg-gradient-to-r from-zinc-100 to-indigo-100  hover:from-indigo-100 hover:to-purple-100 relative">
+                            <div class="w-48 h-48 mx-auto rounded-full bg-gradient-to-r from-indigo-600 to-purple-500">
+                                <img class="w-48 p-1 rounded-full" src="./assets/team/muhib.jpg" alt="Muhibullah">
+                            </div>
+                            <div class="my-4">
+                                <div class="text-center">
+                                    <h2 class="font-semibold">Muhibullah</h2>
+                                    <p class="text-slate-500">Senior Software Developer</p>
+                                    <p class="font-semibold"><small>Front-End</small></p>
+                                </div>
+                                <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
+                                <div class="text-center my-4">
+                                    <a href="https://github.com/muhib-dev" target="_blank">
+                                        <i class="fa-brands fa-github text-2xl h-8 rounded-full mx-3"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/muhibullah-khandaker/" target="_blank">
+                                        <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3"></i>
+                                    </a>
+                                    <a href="https://docs.google.com/document/d/1MWCXVYZEl6aXu4zZst2fEW9qLHkViZyPUMhvJt99Xf0/edit" target="_blank">
+                                        <i class="fa-solid fa-globe text-2xl h-8 rounded-full mx-3"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
                     </div>
-                    <div class="my-4">
-                        <div class="text-center">
-                            <h2 class="font-semibold">Talha Bin Ashraf</h2>
-                            <p class="text-slate-500">SQA Engineer</p>
-                            <p class="font-semibold"><small>Specialized in Automation</small></p>
-                        </div>
-                        <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
-                        <div class="text-center my-4">
-                            <a href="https://github.com/TalhaBinAshraf1" target="_blank">
-                                <i class="fa-brands fa-github text-2xl h-8 w-4 rounded-full mx-3"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/talha-sqa-engineer/" target="_blank">
-                                <i class="fa-brands fa-linkedin text-2xl h-8 w-4 rounded-full mx-3"></i>
-                            </a>
-                            <a href="https://twitter.com/talhabinashraf" target="_blank">
-                                <i class="fa-brands fa-twitter text-2xl h-8 w-4 rounded-full mx-3"></i>
-                            </a>
-                        </div>
+                    <div class="swiper-slide bg-cover bg-center w-72">
+                        <!------- Shahed Al Mahmud ------->
+                        <section class="w-72 p-4 border-1 bg-gradient-to-r from-zinc-100 to-indigo-100  hover:from-indigo-100 hover:to-purple-100 relative">
+                            <div class="w-48 mx-auto rounded-full bg-gradient-to-r from-indigo-600 to-purple-500">
+                                <img class="w-48 h-48 p-1 rounded-full" src="./assets/team/shahed.jpg" alt="Shahed Al Mahmud">
+                            </div>
+                            <div class="my-4">
+                                <div class="text-center">
+                                    <h2 class="font-semibold">Shahed Al Mahmud</h2>
+                                    <p class="text-slate-500">Senior Software Developer</p>
+                                    <p class="font-semibold"><small>Back-End</small></p>
+                                </div>
+                                <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
+                                <div class="text-center my-4">
+                                    <a href="http://www.github.com/shahed-webdev" target="_blank">
+                                        <i class="fa-brands fa-github text-2xl h-8 rounded-full mx-3"></i>
+                                    </a>
+                                    <a href="http://linkedin.com/in/shahed-al-mahmud" target="_blank">
+                                        <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3"></i>
+                                    </a>
+                                    <a href="https://docs.google.com/document/d/1U2HzdXgm9SAJURptBRxkYbjiT6OzTz7Q0epU5Mw7WS0" target="_blank">
+                                        <i class="fa-solid fa-globe text-2xl h-8 rounded-full mx-3"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
                     </div>
-                </section>
-                <!------- Asif Iqbal ------->
-                <section class="w-72 p-4 border-1 bg-gradient-to-r from-zinc-100 to-indigo-100  hover:from-indigo-100 hover:to-purple-100 relative">
-                    <div class="w-48 mx-auto rounded-full bg-gradient-to-r from-indigo-600 to-purple-500">
-                        <img class="w-48 p-1 rounded-full" src="./assets/team/iqbal.jpg" alt="Iqbal">
+                    <div class="swiper-slide bg-cover bg-center w-72">
+                        <!------- Md Moinur Mahbub ------->
+                        <section class="w-72 p-4 border-1 bg-gradient-to-r from-zinc-100 to-indigo-100  hover:from-indigo-100 hover:to-purple-100 relative">
+                            <div class="w-48 mx-auto rounded-full bg-gradient-to-r from-indigo-600 to-purple-500">
+                                <img class="w-48 p-1 rounded-full" src="./assets/team/amin.jpg" alt="Md Moinur Mahbub">
+                            </div>
+                            <div class="my-4">
+                                <div class="text-center">
+                                    <h2 class="font-semibold">Md Moinur Mahbub</h2>
+                                    <p class="text-slate-500">Web Developer</p>
+                                    <p class="font-semibold"><small>MERN Stack</small></p>
+                                </div>
+                                <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
+                                <div class="text-center my-4">
+                                    <a href="https://github.com/mdmmalamin" target="_blank">
+                                        <i class="fa-brands fa-github text-2xl h-8 rounded-full mx-3"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/mdmmalamin/" target="_blank">
+                                        <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3"></i>
+                                    </a>
+                                    <a href="https://twitter.com/mdmmalamin" target="_blank">
+                                        <i class="fa-brands fa-twitter text-2xl h-8 rounded-full mx-3"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
                     </div>
-                    <div class="my-4">
-                        <div class="text-center">
-                            <h2 class="font-semibold">Asif Iqbal</h2>
-                            <p class="text-slate-500">SQA Engineer</p>
-                            <p class="font-semibold"><small>ISTQB Certified</small></p>
-                        </div>
-                        <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
-                        <div class="text-center my-4">
-                            <a href="https://github.com/asif-iqbal-sqa" target="_blank">
-                                <i class="fa-brands fa-github text-2xl h-8 w-4 rounded-full mx-3"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/asifiqbal-sqa/" target="_blank">
-                                <i class="fa-brands fa-linkedin text-2xl h-8 w-4 rounded-full mx-3"></i>
-                            </a>
-                            <a href="https://twitter.com/asifiqbalsqa" target="_blank">
-                                <i class="fa-brands fa-twitter text-2xl h-8 w-4 rounded-full mx-3"></i>
-                            </a>
-                        </div>
+                    <div class="swiper-slide bg-cover bg-center w-72">
+                        <!------- A.B. Zaman ------->
+                        <section class="w-72 p-4 border-1 bg-gradient-to-r from-zinc-100 to-indigo-100  hover:from-indigo-100 hover:to-purple-100 relative">
+                            <div class="w-48 mx-auto rounded-full bg-gradient-to-r from-indigo-600 to-purple-500">
+                                <img class="w-48 p-1 rounded-full" src="./assets/team/zaman.jpg" alt="A.B. Zaman">
+                            </div>
+                            <div class="my-4">
+                                <div class="text-center">
+                                    <h2 class="font-semibold">A.B. Zaman</h2>
+                                    <p class="text-slate-500">Identity Designer</p>
+                                    <!-- <p class="font-semibold"><small>Identity Designer</small></p> -->
+                                </div>
+                                <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
+                                <div class="text-center my-4">
+                                    <a href="https://www.behance.net/abzaman7/" target="_blank">
+                                        <i class="fa-brands fa-square-behance text-2xl h-8 rounded-full mx-3"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/abzaman/" target="_blank">
+                                        <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3"></i>
+                                    </a>
+                                    <a href="https://dribbble.com/ab_designs__/" target="_blank">
+                                        <i class="fa-brands fa-square-dribbble text-2xl h-8 rounded-full mx-3"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
                     </div>
-                </section>
-                <!------- Muhibullah ------->
-                <section class="w-72 p-4 border-1 bg-gradient-to-r from-zinc-100 to-indigo-100  hover:from-indigo-100 hover:to-purple-100 relative">
-                    <div class="w-48 h-48 mx-auto rounded-full bg-gradient-to-r from-indigo-600 to-purple-500">
-                        <img class="w-48 p-1 rounded-full" src="./assets/team/muhib.jpg" alt="Muhibullah">
-                    </div>
-                    <div class="my-4">
-                        <div class="text-center">
-                            <h2 class="font-semibold">Muhibullah</h2>
-                            <p class="text-slate-500">Senior Software Developer</p>
-                            <p class="font-semibold"><small>Front-End</small></p>
-                        </div>
-                        <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
-                        <div class="text-center my-4">
-                            <a href="https://github.com/muhib-dev" target="_blank">
-                                <i class="fa-brands fa-github text-2xl h-8 rounded-full mx-3"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/muhibullah-khandaker/" target="_blank">
-                                <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3"></i>
-                            </a>
-                            <a href="https://docs.google.com/document/d/1MWCXVYZEl6aXu4zZst2fEW9qLHkViZyPUMhvJt99Xf0/edit" target="_blank">
-                                <i class="fa-solid fa-globe text-2xl h-8 rounded-full mx-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-                <!------- Shahed Al Mahmud ------->
-                <section class="w-72 p-4 border-1 bg-gradient-to-r from-zinc-100 to-indigo-100  hover:from-indigo-100 hover:to-purple-100 relative">
-                    <div class="w-48 mx-auto rounded-full bg-gradient-to-r from-indigo-600 to-purple-500">
-                        <img class="w-48 h-48 p-1 rounded-full" src="./assets/team/shahed.jpg" alt="Shahed Al Mahmud">
-                    </div>
-                    <div class="my-4">
-                        <div class="text-center">
-                            <h2 class="font-semibold">Shahed Al Mahmud</h2>
-                            <p class="text-slate-500">Senior Software Developer</p>
-                            <p class="font-semibold"><small>Back-End</small></p>
-                        </div>
-                        <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
-                        <div class="text-center my-4">
-                            <a href="http://www.github.com/shahed-webdev" target="_blank">
-                                <i class="fa-brands fa-github text-2xl h-8 rounded-full mx-3"></i>
-                            </a>
-                            <a href="http://linkedin.com/in/shahed-al-mahmud" target="_blank">
-                                <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3"></i>
-                            </a>
-                            <a href="https://docs.google.com/document/d/1U2HzdXgm9SAJURptBRxkYbjiT6OzTz7Q0epU5Mw7WS0" target="_blank">
-                                <i class="fa-solid fa-globe text-2xl h-8 rounded-full mx-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-                <!------- Md Moinur Mahbub ------->
-                <section class="w-72 p-4 border-1 bg-gradient-to-r from-zinc-100 to-indigo-100  hover:from-indigo-100 hover:to-purple-100 relative">
-                    <div class="w-48 mx-auto rounded-full bg-gradient-to-r from-indigo-600 to-purple-500">
-                        <img class="w-48 p-1 rounded-full" src="./assets/team/amin.jpg" alt="Md Moinur Mahbub">
-                    </div>
-                    <div class="my-4">
-                        <div class="text-center">
-                            <h2 class="font-semibold">Md Moinur Mahbub</h2>
-                            <p class="text-slate-500">Web Developer</p>
-                            <p class="font-semibold"><small>MERN Stack</small></p>
-                        </div>
-                        <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
-                        <div class="text-center my-4">
-                            <a href="https://github.com/mdmmalamin" target="_blank">
-                                <i class="fa-brands fa-github text-2xl h-8 rounded-full mx-3"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/mdmmalamin/" target="_blank">
-                                <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3"></i>
-                            </a>
-                            <a href="https://twitter.com/mdmmalamin" target="_blank">
-                                <i class="fa-brands fa-twitter text-2xl h-8 rounded-full mx-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-                <!------- A.B. Zaman ------->
-                <section class="w-72 p-4 border-1 bg-gradient-to-r from-zinc-100 to-indigo-100  hover:from-indigo-100 hover:to-purple-100 relative">
-                    <div class="w-48 mx-auto rounded-full bg-gradient-to-r from-indigo-600 to-purple-500">
-                        <img class="w-48 p-1 rounded-full" src="./assets/team/zaman.jpg" alt="A.B. Zaman">
-                    </div>
-                    <div class="my-4">
-                        <div class="text-center">
-                            <h2 class="font-semibold">A.B. Zaman</h2>
-                            <p class="text-slate-500">Identity Designer</p>
-                            <!-- <p class="font-semibold"><small>Identity Designer</small></p> -->
-                        </div>
-                        <div class="border-b-2 border-purple-500 w-12 mx-auto my-4"></div>
-                        <div class="text-center my-4">
-                            <a href="https://www.behance.net/abzaman7/" target="_blank">
-                                <i class="fa-brands fa-square-behance text-2xl h-8 rounded-full mx-3"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/abzaman/" target="_blank">
-                                <i class="fa-brands fa-linkedin text-2xl h-8 rounded-full mx-3"></i>
-                            </a>
-                            <a href="https://dribbble.com/ab_designs__/" target="_blank">
-                                <i class="fa-brands fa-square-dribbble text-2xl h-8 rounded-full mx-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-            </section>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
         </section>
     </main>
 
@@ -493,6 +556,33 @@
     </footer>
 
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            // grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false
+            },
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination"
+            }
+        });
+    </script>
+
     <!------- Ionicons ------->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -507,3 +597,8 @@
 </body>
 
 </html>
+
+<!-- autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+}, -->
