@@ -577,9 +577,24 @@
     </script>
     <script>
         var swiper1 = new Swiper(".serviceSwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            slidesPerGroup: 3,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 320px
+                768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                slidesPerGroup: 4,
+                },
+                // when window width is >= 480px
+                1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                slidesPerGroup: 3
+                }
+            },
+            // slidesPerGroup: 7,
             loop: true,
             loopFillGroupWithBlank: true,
             autoplay: true,
