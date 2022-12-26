@@ -1,7 +1,7 @@
 // Menu Bar
 function Menu(e){
     let list = document.querySelector('ul');
-    e.name === 'menu' ? (e.name = "close",list.classList.add('top-[68px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[68px]'),list.classList.remove('opacity-100'))
+    e.name === 'menu' ? (e.name = "close",list.classList.add('top-[68px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[68px]'),list.classList.remove('opacity-100'));
 }
 
 // Our Team Member
