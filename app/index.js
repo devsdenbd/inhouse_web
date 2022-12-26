@@ -8,12 +8,14 @@ function Menu(e){
 let swiper = new Swiper(".mySwiper", {
 
     // pagination: '.pagination',
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 1000, // 2000ms = 2s;
-    autoplayHoverPause: true,
-    // paginationClickable: true,
+    loop: true, 
+    autoplay: {
+        delay: 2500, // 2000ms = 2s;
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
 
+    
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
@@ -24,15 +26,10 @@ let swiper = new Swiper(".mySwiper", {
         depth: 300,
         modifier: 1,
         slideShadows: false,
-    }
+    },
 });
 
-// (".mySwiper").mouseenter(function(){
-//     swiper.autoplay.stop();
-// });
-// (".mySwiper").mouseleave(function(){
-//     swiper.autoplay.start();
-// });
+
 
 // Our Services
 let swiper1 = new Swiper(".serviceSwiper", {
@@ -56,8 +53,11 @@ let swiper1 = new Swiper(".serviceSwiper", {
     slidesPerGroup: 1,
     loop: true,
     loopFillGroupWithBlank: true,
-    autoplay: true,
-    autoplayTimeout: 1000,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
